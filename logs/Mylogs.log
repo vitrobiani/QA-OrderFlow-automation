@@ -1,0 +1,7 @@
+[INFO ] 2026-06-17 00:18:26.645 [main] Test161_ApiProductFetch - [PASS] #161 furniture -> 5 products, all descriptors present
+[INFO ] 2026-06-17 00:18:26.871 [main] Test161_ApiProductFetch - [PASS] #161 groceries -> 10 products, all descriptors present
+[INFO ] 2026-06-17 00:18:27.078 [main] Test161_ApiProductFetch - [PASS] #161 laptops -> 5 products, all descriptors present
+[INFO ] 2026-06-17 00:18:27.281 [main] Test161_ApiProductFetch - [PASS] #161 mobile-accessories -> 10 products, all descriptors present
+[INFO ] 2026-06-17 00:18:27.492 [main] Test161_ApiProductFetch - [PASS] #161 smartphones -> 10 products, all descriptors present
+[INFO ] 2026-06-17 00:18:27.687 [main] Test161_ApiProductFetch - [PASS] #161 sports-accessories -> 10 products, all descriptors present
+[INFO ] 2026-06-17 00:18:27.688 [main] Test161_ApiProductFetch - [PASS] #161 API product fetch — all categories OK

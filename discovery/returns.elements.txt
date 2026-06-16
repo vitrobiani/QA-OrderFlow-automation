@@ -1,0 +1,6 @@
+count=4
+---
+[0] a | text="Home" | id="nav-home" | href="https://nano-flow-order-direct.base44.app/" | class="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 text-mu…"
+[1] a | text="New Order" | id="nav-new-order" | href="https://nano-flow-order-direct.base44.app/order" | class="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 text-mu…"
+[2] a | text="Order History" | id="nav-order-history" | href="https://nano-flow-order-direct.base44.app/history" | class="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 text-mu…"
+[3] a | text="Returns" | id="nav-returns" | href="https://nano-flow-order-direct.base44.app/returns" | class="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 bg-prim…"

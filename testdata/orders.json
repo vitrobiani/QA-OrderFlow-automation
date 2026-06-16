@@ -1,0 +1,6 @@
+[
+  { "name":"valid_single",        "category":"laptops",     "product":"<fill at runtime>", "qty":1,    "expectPass":true,  "expectError":"" },
+  { "name":"qty_over_stock",      "category":"laptops",     "product":"<fill at runtime>", "qty":99999,"expectPass":false, "expectError":"stock" },
+  { "name":"sum_over_10000",      "category":"smartphones", "product":"<fill at runtime>", "qty":50,   "expectPass":false, "expectError":"10000" },
+  { "name":"furniture_groceries", "category":"mix",         "product":"<fill at runtime>", "qty":1,    "expectPass":false, "expectError":"categories" }
+]
