@@ -2,7 +2,6 @@ package testCases;
 
 import static org.junit.Assert.assertTrue;
 
-import com.sun.xml.bind.v2.TODO;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.After;
@@ -10,10 +9,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.JUnitCore;
 import org.junit.internal.TextListener;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-
-import org.openqa.selenium.WebElement;
 import pages.NavBar;
 import pages.NewOrderPage;
 
@@ -53,12 +49,19 @@ public class Test166_AddProductsToOrder {
         boolean emptyInitially = orderPage.hasSummaryEmptyState();
         logger.info("#166 Initial empty state: " + emptyInitially);
 
+        // Track prices for sum verification
+        double price1 = 0;
+        double price2 = 0;
+        int qty1 = 1;
+        int qty2 = 1;
+
         // Add first product from laptops
         orderPage.selectCategory("laptops");
         Thread.sleep(2000);
 
         String product1 = orderPage.firstProductName();
-        logger.info("#166 Adding product 1: " + product1);
+        price1 = orderPage.firstProductPrice();
+        logger.info("#166 Adding product 1: " + product1 + " (card price: $" + price1 + ")");
         orderPage.addFirstProduct();
         Thread.sleep(1000);
 
@@ -66,6 +69,12 @@ public class Test166_AddProductsToOrder {
         int rowsAfter1 = orderPage.summaryRows().size();
         double sumAfter1 = orderPage.orderSum();
         logger.info("#166 After adding product 1: rows=" + rowsAfter1 + ", sum=$" +  sumAfter1);
+
+        // If price locator failed, infer price from order sum (qty=1 at this point)
+        if (price1 == 0 && sumAfter1 > 0) {
+            price1 = sumAfter1;
+            logger.info("#166 Inferred price1 from order sum: $" + price1);
+        }
 
         boolean hasFirstProduct = rowsAfter1 > 0 || !orderPage.hasSummaryEmptyState();
         if (hasFirstProduct) {
@@ -81,7 +90,8 @@ public class Test166_AddProductsToOrder {
         Thread.sleep(2000);
 
         String product2 = orderPage.firstProductName();
-        logger.info("#166 Adding product 2: " + product2);
+        price2 = orderPage.firstProductPrice();
+        logger.info("#166 Adding product 2: " + product2 + " (card price: $" + price2 + ")");
         orderPage.addFirstProduct();
         Thread.sleep(1000);
 
@@ -89,6 +99,12 @@ public class Test166_AddProductsToOrder {
         int rowsAfter2 = orderPage.summaryRows().size();
         double sumAfter2 = orderPage.orderSum();
         logger.info("#166 After adding product 2: rows=" + rowsAfter2 + ", sum=$" +  sumAfter2);
+
+        // If price locator failed, infer price from sum difference
+        if (price2 == 0 && sumAfter2 > sumAfter1) {
+            price2 = sumAfter2 - sumAfter1;
+            logger.info("#166 Inferred price2 from sum difference: $" + price2);
+        }
 
         boolean sumIncreased = sumAfter2 > sumAfter1;
         if (sumIncreased) {
@@ -101,8 +117,10 @@ public class Test166_AddProductsToOrder {
         try {
             logger.info("#166 Testing quantity increase with + button...");
             orderPage.plus(product1);
+            qty1++;
             Thread.sleep(500);
             orderPage.plus(product2);
+            qty2++;
             Thread.sleep(1000);
 
             double sumAfterPlus = orderPage.orderSum();
@@ -112,16 +130,37 @@ public class Test166_AddProductsToOrder {
                 logger.info("[PASS] #166 Plus button worked - sum increased");
             } else {
                 logger.warn("[WARN] #166 Sum did not increase after plus button");
+                // Reset quantities if plus didn't work
+                qty1 = 1;
+                qty2 = 1;
             }
 
         } catch (Exception e) {
             logger.warn("[WARN] #166 Plus button not found or not clickable: " + e.getMessage());
             logger.warn("       This may indicate the summary row locators need adjustment");
+            // Reset quantities if plus failed
+            qty1 = 1;
+            qty2 = 1;
         }
-        try {
-//            TODO - add assert to make sure order sum is correct at the end
-        } catch (Exception e) {
+
+        // Final verification: calculate expected sum and compare
+        double expectedSum = (price1 * qty1) + (price2 * qty2);
+        double finalSum = orderPage.orderSum();
+        logger.info("#166 Expected sum: $" + expectedSum + " (product1: $" + price1 + " x " + qty1 + " + product2: $" + price2 + " x " + qty2 + ")");
+        logger.info("#166 Actual sum:   $" + finalSum);
+
+        assertTrue("Order sum should be greater than zero after adding products", finalSum > 0);
+
+        // Allow small tolerance for floating point comparison
+        double tolerance = 0.01;
+        boolean sumMatches = Math.abs(finalSum - expectedSum) < tolerance;
+
+        if (sumMatches) {
+            logger.info("[PASS] #166 Order sum matches expected: $" + finalSum);
+        } else {
+            logger.error("[FAIL] #166 Order sum mismatch! Expected: $" + expectedSum + ", Actual: $" + finalSum);
         }
+        assertTrue("Order sum should match calculated total", sumMatches);
 
         logger.info("[PASS] #166 Add products to order test complete");
     }

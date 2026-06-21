@@ -146,6 +146,48 @@ public class NewOrderPage extends BasePage {
         java.util.regex.Matcher m = java.util.regex.Pattern.compile("\\d+").matcher(raw);
         return m.find() ? Integer.parseInt(m.group()) : 0;
     }
+
+    /**
+     * Returns the price of the first product card.
+     * Price format: "$123.45" → 123.45
+     * Tries multiple locator strategies to find the price.
+     */
+    public double firstProductPrice() {
+        // Try different locator strategies
+        By[] priceLocators = {
+            By.cssSelector("[data-testid^='price-']"),
+            By.xpath("(//*[contains(@class,'product') or contains(@class,'card')]//*[starts-with(normalize-space(),'$')])[1]"),
+            By.xpath("(//*[contains(@class,'product') or contains(@class,'card')]//*[contains(@class,'price')])[1]"),
+            By.xpath("(//*[contains(@data-testid,'price')])[1]")
+        };
+
+        for (By locator : priceLocators) {
+            if (isPresent(locator)) {
+                String raw = text(locator);
+                java.util.regex.Matcher m = java.util.regex.Pattern.compile("\\d+\\.\\d{2}").matcher(raw);
+                if (m.find()) {
+                    return Double.parseDouble(m.group());
+                }
+            }
+        }
+        return 0.0;
+    }
+
+    /**
+     * Returns the quantity for a product in the order summary.
+     */
+    public int getQuantity(String productName) {
+        By input = By.xpath(orderItemXPath(productName) + "//input[starts-with(@id,'quantity-input-')]");
+        if (isPresent(input)) {
+            String val = waitVisible(input).getAttribute("value");
+            try {
+                return Integer.parseInt(val);
+            } catch (NumberFormatException e) {
+                return 1;
+            }
+        }
+        return 1;
+    }
     public void plus(String productName)  { click(qtyButton(productName, "increase-qty-")); }
     public void minus(String productName) { click(qtyButton(productName, "decrease-qty-")); }
     public void trash(String productName) { click(qtyButton(productName, "remove-item-")); }

@@ -76,7 +76,7 @@ public class Test171_SubmitGoodOrder {
         // Submit order (handles confirmation dialog if present)
         logger.info("#171 Submitting order...");
         orderPage.submitAndConfirm();
-        Thread.sleep(2000);
+        Thread.sleep(1000);
 
         // Verify no validation error
         boolean hasError = orderPage.hasError();
@@ -90,12 +90,12 @@ public class Test171_SubmitGoodOrder {
         if (orderPage.hasConfirmDialog()) {
             logger.info("#171 Confirm-order dialog shown, accepting");
             orderPage.confirm();
-            Thread.sleep(2000);
+            Thread.sleep(1000);
         }
 
         // Navigate to order history
         nav.goOrderHistory();
-        Thread.sleep(1500);
+        Thread.sleep(1000);
 
         // Verify order appears in history
         boolean historyNotEmpty = !historyPage.isEmpty();
