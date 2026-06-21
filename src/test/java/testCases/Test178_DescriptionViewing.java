@@ -12,6 +12,7 @@ import org.junit.internal.TextListener;
 import org.openqa.selenium.WebDriver;
 
 import pages.HomePage;
+import pages.NewOrderPage;
 import pages.NavBar;
 
 /**
@@ -98,7 +99,40 @@ public class Test178_DescriptionViewing {
             logger.info("[PASS] #178 Card 2 description toggle works");
         }
 
-        logger.info("[PASS] #178 Description viewing test complete");
+        driver.get(base_test_class.BASE_URL + "/order");
+        NewOrderPage orderPage = new NewOrderPage(driver);
+        orderPage.selectCategory("mobile-accessories");
+
+        assertTrue("Order page not loaded", orderPage.isLoaded());
+
+        String productName = orderPage.firstProductName();
+
+        String before = orderPage.productCardText(productName);
+        logger.info("Before toggle length: " + before.length());
+
+        orderPage.toggleProductDesc(productName);
+        Thread.sleep(500);
+
+        String after = orderPage.productCardText(productName);
+        logger.info("After toggle length: " + after.length());
+
+        assertTrue(
+                "Description toggle did not change card content",
+                before.length() != after.length()
+        );
+
+// Toggle back
+        orderPage.toggleProductDesc(productName);
+        Thread.sleep(500);
+
+        String back = orderPage.productCardText(productName);
+        logger.info("After second toggle length: " + back.length());
+
+        assertTrue(
+                "Card did not return close to original state",
+                Math.abs(back.length() - before.length()) < 20
+        );
+        logger.info("[PASS] #178 checks passed");
     }
 
     public static void main(String[] args) {

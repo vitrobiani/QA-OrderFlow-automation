@@ -2,10 +2,16 @@ package testCases;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.JUnitCore;
 import org.junit.internal.TextListener;
+import org.openqa.selenium.WebDriver;
+import pages.NavBar;
+
+import static org.junit.Assert.assertTrue;
 
 /**
  * PractiTest Test #157 — Logo navigation.
@@ -35,15 +41,56 @@ import org.junit.internal.TextListener;
  */
 public class Test157_LogoNavigation {
 
-    private static final Logger logger = LogManager.getLogger(Test157_LogoNavigation.class);
+    private WebDriver driver;
+    private static final Logger logger = LogManager.getLogger(Test156_ReturnsNavigation.class);
 
-    @Ignore("Logo is not clickable in current SUT — see LOCATORS.md")
+    @Before
+    public void setUp() {
+        driver = base_test_class.initializeDriver();
+    }
+
+    @After
+    public void tearDown() {
+        if (driver != null) driver.quit();
+    }
+
     @Test
     public void testLogoNavigation() {
-        // This test would navigate to non-home pages and click the logo,
-        // asserting we return to Home each time.
-        // Currently skipped because the logo element has no click handler.
-        logger.info("[SKIP] #157 Logo navigation — logo is not clickable in current SUT");
+        NavBar nav = new NavBar(driver);
+
+        // From New Home -> Home (Logo)
+        driver.get(base_test_class.BASE_URL);
+        nav.clickLogo();
+        boolean onHome0 = nav.isOnHome();
+        if (onHome0) logger.info("[PASS] #156 Home -> Returns");
+        else            logger.error("[FAIL] #156 Home -> Returns: not on returns screen");
+        assertTrue("Home -> Returns failed", onHome0);
+
+        // From New Order -> Home (Logo)
+        driver.get(base_test_class.BASE_URL + NavBar.ROUTE_ORDER);
+        nav.clickLogo();
+        boolean onHome1 = nav.isOnHome();
+        if (onHome1) logger.info("[PASS] #157 New Order -> Home (Logo)");
+        else         logger.error("[FAIL] #157 New Order -> Home (Logo): not on home screen");
+        assertTrue("New Order -> Home failed", onHome1);
+
+        // From Order History -> Home (Logo)
+        driver.get(base_test_class.BASE_URL + NavBar.ROUTE_HISTORY);
+        nav.clickLogo();
+        boolean onHome2 = nav.isOnHome();
+        if (onHome2) logger.info("[PASS] #157 Order History -> Home (Logo)");
+        else         logger.error("[FAIL] #157 Order History -> Home (Logo): not on home screen");
+        assertTrue("Order History -> Home failed", onHome2);
+
+        // From Returns -> Home (Logo)
+        driver.get(base_test_class.BASE_URL + NavBar.ROUTE_RETURNS);
+        nav.clickLogo();
+        boolean onHome3 = nav.isOnHome();
+        if (onHome3) logger.info("[PASS] #157 Returns -> Home (Logo)");
+        else         logger.error("[FAIL] #157 Returns -> Home (Logo): not on home screen");
+        assertTrue("Returns -> Home failed", onHome3);
+
+        logger.info("[PASS] #157 Logo navigation - all entry points OK");
     }
 
     public static void main(String[] args) {

@@ -181,3 +181,137 @@ Close
 [INFO ] 2026-06-21 16:40:11.163 [main] Test166_AddProductsToOrder - #166 After clicking + buttons: sum=$1039.96
 [INFO ] 2026-06-21 16:40:11.163 [main] Test166_AddProductsToOrder - [PASS] #166 Plus button worked - sum increased
 [INFO ] 2026-06-21 16:40:11.163 [main] Test166_AddProductsToOrder - [PASS] #166 Add products to order test complete
+[INFO ] 2026-06-21 16:45:24.919 [main] Test150_ProductAmountOptions - #150 Testing with product: iPad Mini 2021 Starlight
+[INFO ] 2026-06-21 16:45:30.240 [main] Test150_ProductAmountOptions - #150 Initial summary rows: 1
+[INFO ] 2026-06-21 16:45:30.240 [main] Test150_ProductAmountOptions - [PASS] #150 Product added to summary
+[INFO ] 2026-06-21 16:45:30.272 [main] Test150_ProductAmountOptions - #150 Sum before +: 499.99
+[INFO ] 2026-06-21 16:45:35.622 [main] Test150_ProductAmountOptions - #150 Sum after +: 999.98
+[INFO ] 2026-06-21 16:45:35.622 [main] Test150_ProductAmountOptions - [PASS] #150 Plus button increased sum
+[INFO ] 2026-06-21 16:45:40.942 [main] Test150_ProductAmountOptions - #150 Sum after -: 499.99
+[INFO ] 2026-06-21 16:45:46.235 [main] Test150_ProductAmountOptions - [PASS] #150 Trash button removed product
+[INFO ] 2026-06-21 16:45:46.235 [main] Test150_ProductAmountOptions - [PASS] #150 Product amount options test complete
+[INFO ] 2026-06-21 16:46:22.916 [main] Test177_InStockOnlyFilter - #177 Initial product count (all): 3
+[WARN ] 2026-06-21 16:46:39.120 [main] Test177_InStockOnlyFilter - #177 In-stock toggle not found or not interactable: Expected condition failed: waiting for element to be clickable: By.xpath: //*[self::input or self::button or @role='switch'][contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'in stock')] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\Oaley\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63313}, goog:processID: 42732, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63313/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3b31dd117182341cb6eb9f75febb87a9
+[INFO ] 2026-06-21 16:46:39.120 [main] Test177_InStockOnlyFilter - [SKIP] #177 In-stock filter test skipped - toggle not available
+[INFO ] 2026-06-21 16:46:39.121 [main] Test177_InStockOnlyFilter - [PASS] #177 In-stock only filter test complete
+[INFO ] 2026-06-21 16:50:07.447 [main] Test177_InStockOnlyFilter - #177 Initial product count (all): 3
+[INFO ] 2026-06-21 16:50:09.253 [main] Test177_InStockOnlyFilter - #177 Toggled 'In stock only' filter
+[INFO ] 2026-06-21 16:50:09.261 [main] Test177_InStockOnlyFilter - #177 Products after 'In stock only': 3
+[INFO ] 2026-06-21 16:50:09.263 [main] Test177_InStockOnlyFilter - [PASS] #177 In-stock filter applied (count: 3 <= 3)
+[INFO ] 2026-06-21 16:50:11.067 [main] Test177_InStockOnlyFilter - #177 Products after toggling off: 3
+[INFO ] 2026-06-21 16:50:11.067 [main] Test177_InStockOnlyFilter - [PASS] #177 Filter toggled off successfully
+[INFO ] 2026-06-21 16:50:11.067 [main] Test177_InStockOnlyFilter - [PASS] #177 In-stock only filter test complete
+[WARN ] 2026-06-21 16:59:32.967 [main] Test177_InStockOnlyFilter - #177 Could not add Apple AirPower Wireless Charger: Expected condition failed: waiting for element to be clickable: By.xpath: //*[contains(@class,'product') or contains(@class,'card')][.//*[normalize-space()='Apple AirPower Wireless Charger']]//button[contains(translate(.,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'add')] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\Oaley\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59198}, goog:processID: 15420, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59198/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 75ca56fda030a2943d91a55a38aa3725
+[INFO ] 2026-06-21 16:59:32.981 [main] Test177_InStockOnlyFilter - #177 Initial product count (all): 10
+[INFO ] 2026-06-21 16:59:34.775 [main] Test177_InStockOnlyFilter - #177 Toggled 'In stock only' filter
+[INFO ] 2026-06-21 16:59:34.784 [main] Test177_InStockOnlyFilter - #177 Products after 'In stock only': 10
+[INFO ] 2026-06-21 16:59:34.786 [main] Test177_InStockOnlyFilter - [PASS] #177 In-stock filter applied (count: 10 <= 10)
+[INFO ] 2026-06-21 16:59:36.578 [main] Test177_InStockOnlyFilter - #177 Products after toggling off: 10
+[INFO ] 2026-06-21 16:59:36.578 [main] Test177_InStockOnlyFilter - [PASS] #177 Filter toggled off successfully
+[INFO ] 2026-06-21 16:59:36.578 [main] Test177_InStockOnlyFilter - [PASS] #177 In-stock only filter test complete
+[WARN ] 2026-06-21 17:01:35.044 [main] Test177_InStockOnlyFilter - #177 Could not add Apple AirPower Wireless Charger: Expected condition failed: waiting for element to be clickable: By.xpath: //*[contains(@class,'product') or contains(@class,'card')][.//*[normalize-space()='Apple AirPower Wireless Charger']]//button[contains(translate(.,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'add')] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\Oaley\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57328}, goog:processID: 46304, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57328/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8148d346be017d42effaa9387a610371
+[INFO ] 2026-06-21 17:01:35.060 [main] Test177_InStockOnlyFilter - #177 Initial product count (all): 10
+[INFO ] 2026-06-21 17:01:36.839 [main] Test177_InStockOnlyFilter - #177 Toggled 'In stock only' filter
+[INFO ] 2026-06-21 17:01:36.848 [main] Test177_InStockOnlyFilter - #177 Products after 'In stock only': 10
+[INFO ] 2026-06-21 17:01:36.849 [main] Test177_InStockOnlyFilter - [PASS] #177 In-stock filter applied (count: 10 <= 10)
+[INFO ] 2026-06-21 17:01:38.639 [main] Test177_InStockOnlyFilter - #177 Products after toggling off: 10
+[INFO ] 2026-06-21 17:01:38.640 [main] Test177_InStockOnlyFilter - [PASS] #177 Filter toggled off successfully
+[INFO ] 2026-06-21 17:01:38.640 [main] Test177_InStockOnlyFilter - [PASS] #177 In-stock only filter test complete
+[WARN ] 2026-06-21 17:02:41.597 [main] Test177_InStockOnlyFilter - #177 Could not add Apple AirPower Wireless Charger: Expected condition failed: waiting for element to be clickable: By.xpath: //*[contains(@class,'product') or contains(@class,'card')][.//*[normalize-space()='Apple AirPower Wireless Charger']]//button[contains(translate(.,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'add')] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\Oaley\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59129}, goog:processID: 15356, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59129/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 109fd2e43d55a504b5362c6451701997
+[INFO ] 2026-06-21 17:02:41.613 [main] Test177_InStockOnlyFilter - #177 Initial product count (all): 10
+[INFO ] 2026-06-21 17:02:43.430 [main] Test177_InStockOnlyFilter - #177 Toggled 'In stock only' filter
+[INFO ] 2026-06-21 17:02:43.441 [main] Test177_InStockOnlyFilter - #177 Products after 'In stock only': 10
+[INFO ] 2026-06-21 17:02:43.442 [main] Test177_InStockOnlyFilter - [PASS] #177 In-stock filter applied (count: 10 <= 10)
+[INFO ] 2026-06-21 17:02:45.241 [main] Test177_InStockOnlyFilter - #177 Products after toggling off: 10
+[INFO ] 2026-06-21 17:02:45.241 [main] Test177_InStockOnlyFilter - [PASS] #177 Filter toggled off successfully
+[INFO ] 2026-06-21 17:02:45.241 [main] Test177_InStockOnlyFilter - [PASS] #177 In-stock only filter test complete
+[INFO ] 2026-06-21 17:13:51.289 [main] Test177_InStockOnlyFilter - #177 Added Apple AirPower Wireless Charger to cart
+[INFO ] 2026-06-21 17:13:51.690 [main] Test177_InStockOnlyFilter - #177 Initial product count (all): 9
+[WARN ] 2026-06-21 17:14:07.050 [main] Test177_InStockOnlyFilter - #177 In-stock toggle not found or not interactable: Expected condition failed: waiting for element to be clickable: By.id: in-stock-toggle (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\Oaley\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60652}, goog:processID: 35380, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60652/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 06a3a9dee3626fce1f02510f682a83bd
+[INFO ] 2026-06-21 17:14:07.050 [main] Test177_InStockOnlyFilter - [SKIP] #177 In-stock filter test skipped - toggle not available
+[INFO ] 2026-06-21 17:15:21.723 [main] Test177_InStockOnlyFilter - #177 Added Apple AirPower Wireless Charger to cart
+[INFO ] 2026-06-21 17:15:23.874 [main] Test177_InStockOnlyFilter - #177 Initial product count (all): 10
+[INFO ] 2026-06-21 17:15:25.670 [main] Test177_InStockOnlyFilter - #177 Toggled 'In stock only' filter
+[INFO ] 2026-06-21 17:15:25.679 [main] Test177_InStockOnlyFilter - #177 Products after 'In stock only': 9
+[INFO ] 2026-06-21 17:15:25.681 [main] Test177_InStockOnlyFilter - [PASS] #177 In-stock filter applied (count: 9 <= 10)
+[INFO ] 2026-06-21 17:15:27.473 [main] Test177_InStockOnlyFilter - #177 Products after toggling off: 10
+[INFO ] 2026-06-21 17:15:27.474 [main] Test177_InStockOnlyFilter - [PASS] #177 Filter toggled off successfully
+[INFO ] 2026-06-21 17:15:27.474 [main] Test177_InStockOnlyFilter - [PASS] #177 In-stock only filter test complete
+[INFO ] 2026-06-21 17:15:53.837 [main] Test177_InStockOnlyFilter - #177 Added Apple AirPower Wireless Charger to cart
+[INFO ] 2026-06-21 17:15:55.968 [main] Test177_InStockOnlyFilter - #177 Initial product count (all): 10
+[INFO ] 2026-06-21 17:15:57.760 [main] Test177_InStockOnlyFilter - #177 Toggled 'In stock only' filter
+[INFO ] 2026-06-21 17:15:57.769 [main] Test177_InStockOnlyFilter - #177 Products after 'In stock only': 9
+[INFO ] 2026-06-21 17:15:57.771 [main] Test177_InStockOnlyFilter - [PASS] #177 In-stock filter applied (count: 9 <= 10)
+[INFO ] 2026-06-21 17:15:59.588 [main] Test177_InStockOnlyFilter - #177 Products after toggling off: 10
+[INFO ] 2026-06-21 17:15:59.588 [main] Test177_InStockOnlyFilter - [PASS] #177 Filter toggled off successfully
+[INFO ] 2026-06-21 17:15:59.589 [main] Test177_InStockOnlyFilter - [PASS] #177 In-stock only filter test complete
+[INFO ] 2026-06-21 17:23:13.848 [main] Test178_DescriptionViewing - [PASS] Home page description toggles complete
+[WARN ] 2026-06-21 17:23:19.522 [main] Test178_DescriptionViewing - [SKIP] No products in order page
+[INFO ] 2026-06-21 17:24:28.320 [main] Test178_DescriptionViewing - [PASS] Home page description toggles complete
+[INFO ] 2026-06-21 20:32:17.681 [main] Test178_DescriptionViewing - #178 Featured products section present
+[INFO ] 2026-06-21 20:32:17.741 [main] Test178_DescriptionViewing - #178 Initial card 1 text length: 55
+[INFO ] 2026-06-21 20:32:18.564 [main] Test178_DescriptionViewing - #178 Toggled description for card 1
+[INFO ] 2026-06-21 20:32:18.597 [main] Test178_DescriptionViewing - #178 Card 1 text after toggle length: 230
+[INFO ] 2026-06-21 20:32:18.597 [main] Test178_DescriptionViewing - [PASS] #178 Description toggle changed card content
+[INFO ] 2026-06-21 20:32:19.429 [main] Test178_DescriptionViewing - #178 Card 1 text after second toggle length: 55
+[INFO ] 2026-06-21 20:32:19.429 [main] Test178_DescriptionViewing - [PASS] #178 Description toggled back
+[INFO ] 2026-06-21 20:32:20.251 [main] Test178_DescriptionViewing - #178 Toggled description for card 2
+[INFO ] 2026-06-21 20:32:21.034 [main] Test178_DescriptionViewing - [PASS] #178 Card 2 description toggle works
+[INFO ] 2026-06-21 20:33:26.317 [main] Test178_DescriptionViewing - #178 Featured products section present
+[INFO ] 2026-06-21 20:33:26.372 [main] Test178_DescriptionViewing - #178 Initial card 1 text length: 55
+[INFO ] 2026-06-21 20:33:27.184 [main] Test178_DescriptionViewing - #178 Toggled description for card 1
+[INFO ] 2026-06-21 20:33:27.211 [main] Test178_DescriptionViewing - #178 Card 1 text after toggle length: 230
+[INFO ] 2026-06-21 20:33:27.212 [main] Test178_DescriptionViewing - [PASS] #178 Description toggle changed card content
+[INFO ] 2026-06-21 20:33:28.093 [main] Test178_DescriptionViewing - #178 Card 1 text after second toggle length: 55
+[INFO ] 2026-06-21 20:33:28.093 [main] Test178_DescriptionViewing - [PASS] #178 Description toggled back
+[INFO ] 2026-06-21 20:33:28.888 [main] Test178_DescriptionViewing - #178 Toggled description for card 2
+[INFO ] 2026-06-21 20:33:29.683 [main] Test178_DescriptionViewing - [PASS] #178 Card 2 description toggle works
+[INFO ] 2026-06-21 20:36:31.054 [main] Test178_DescriptionViewing - #178 Featured products section present
+[INFO ] 2026-06-21 20:36:31.114 [main] Test178_DescriptionViewing - #178 Initial card 1 text length: 55
+[INFO ] 2026-06-21 20:36:31.922 [main] Test178_DescriptionViewing - #178 Toggled description for card 1
+[INFO ] 2026-06-21 20:36:31.949 [main] Test178_DescriptionViewing - #178 Card 1 text after toggle length: 230
+[INFO ] 2026-06-21 20:36:31.949 [main] Test178_DescriptionViewing - [PASS] #178 Description toggle changed card content
+[INFO ] 2026-06-21 20:36:32.790 [main] Test178_DescriptionViewing - #178 Card 1 text after second toggle length: 55
+[INFO ] 2026-06-21 20:36:32.791 [main] Test178_DescriptionViewing - [PASS] #178 Description toggled back
+[INFO ] 2026-06-21 20:36:33.597 [main] Test178_DescriptionViewing - #178 Toggled description for card 2
+[INFO ] 2026-06-21 20:36:34.374 [main] Test178_DescriptionViewing - [PASS] #178 Card 2 description toggle works
+[INFO ] 2026-06-21 20:36:36.161 [main] Test178_DescriptionViewing - [PASS] #178 Description viewing test complete
+[INFO ] 2026-06-21 20:42:32.629 [main] Test178_DescriptionViewing - #178 Featured products section present
+[INFO ] 2026-06-21 20:42:32.709 [main] Test178_DescriptionViewing - #178 Initial card 1 text length: 55
+[INFO ] 2026-06-21 20:42:33.539 [main] Test178_DescriptionViewing - #178 Toggled description for card 1
+[INFO ] 2026-06-21 20:42:33.566 [main] Test178_DescriptionViewing - #178 Card 1 text after toggle length: 230
+[INFO ] 2026-06-21 20:42:33.566 [main] Test178_DescriptionViewing - [PASS] #178 Description toggle changed card content
+[INFO ] 2026-06-21 20:42:34.400 [main] Test178_DescriptionViewing - #178 Card 1 text after second toggle length: 55
+[INFO ] 2026-06-21 20:42:34.400 [main] Test178_DescriptionViewing - [PASS] #178 Description toggled back
+[INFO ] 2026-06-21 20:42:35.244 [main] Test178_DescriptionViewing - #178 Toggled description for card 2
+[INFO ] 2026-06-21 20:42:36.019 [main] Test178_DescriptionViewing - [PASS] #178 Card 2 description toggle works
+[INFO ] 2026-06-21 20:42:37.161 [main] Test178_DescriptionViewing - Before toggle length: 68
+[INFO ] 2026-06-21 20:42:37.972 [main] Test178_DescriptionViewing - After toggle length: 230
+[INFO ] 2026-06-21 20:42:38.777 [main] Test178_DescriptionViewing - After second toggle length: 68
+[INFO ] 2026-06-21 20:51:33.148 [main] Test156_ReturnsNavigation - [PASS] #156 Home -> Returns
+[ERROR] 2026-06-21 20:51:34.095 [main] Test156_ReturnsNavigation - [FAIL] #157 New Order -> Home (Logo): not on home screen

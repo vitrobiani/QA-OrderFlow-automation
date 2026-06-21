@@ -41,7 +41,7 @@ public class NewOrderPage extends BasePage {
 
     // ---- Filters / sort / search (⚠ CONFIRM after second discovery pass) -----
     By searchInput        = By.xpath("//input[@type='search' or @type='text'][contains(@placeholder,'earch') or contains(@aria-label,'earch')]");
-    By inStockToggle      = By.xpath("//*[self::input or self::button or @role='switch'][contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'in stock')]");
+    By inStockToggle      = By.id("in-stock-toggle");
     By priceSlider        = By.xpath("//*[@role='slider' or contains(@class,'slider')]");
 
     // ---- Submit / cancel / update / error popup (confirmed via DomDiscovery2) -
@@ -80,9 +80,16 @@ public class NewOrderPage extends BasePage {
     // patterns will be locked after the second discovery pass.
     public void addProduct(String productName) {
         By addBtn = By.xpath("//*[contains(@class,'product') or contains(@class,'card')]"
-                           + "[.//*[normalize-space()='" + productName + "']]"
+                           + "[.//*[contains(.,'" + productName + "')]]"
                            + "//button[contains(translate(.,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'add')]");
         click(addBtn);
+    }
+
+    public void toggleProductDesc(String productName) {
+        By descBtn = By.xpath("//*[contains(@class,'product') or contains(@class,'card')]"
+                + "[.//*[contains(.,'" + productName + "')]]"
+                + "//button[contains(translate(.,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'description')]");
+        click(descBtn);
     }
 
     /**
@@ -93,6 +100,17 @@ public class NewOrderPage extends BasePage {
         By firstAddBtn = By.xpath("(//*[contains(@class,'product') or contains(@class,'card')]"
                                 + "//button[contains(translate(.,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'add')])[1]");
         click(firstAddBtn);
+    }
+
+    public void toggleFirstProductDesc() {
+        By descBtn = By.xpath("(//*[contains(@class,'product') or contains(@class,'card')]"
+                + "//button[contains(translate(.,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'description')])[1]");
+        click(descBtn);
+    }
+
+    public String firstProductCardText() {
+        By card = By.xpath("(//*[contains(@class,'product') or contains(@class,'card')])[1]");
+        return text(card);
     }
 
     /**
@@ -108,6 +126,14 @@ public class NewOrderPage extends BasePage {
      */
     public int productCardCount() {
         return findAll(By.xpath("//*[contains(@class,'product') or contains(@class,'card')][.//button[contains(translate(.,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'add')]]")).size();
+    }
+
+    public String productCardText(String productName) {
+        By card = By.xpath(
+                "//*[contains(@class,'product') or contains(@class,'card')]"
+                        + "[.//*[contains(.,'" + productName + "')]]"
+        );
+        return text(card);
     }
 
     /**

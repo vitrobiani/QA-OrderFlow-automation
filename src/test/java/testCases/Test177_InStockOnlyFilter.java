@@ -46,9 +46,20 @@ public class Test177_InStockOnlyFilter {
         nav.goNewOrder();
         assertTrue("New Order page not loaded", orderPage.isLoaded());
 
-        // Select category
-        orderPage.selectCategory("laptops");
-        Thread.sleep(2000);
+        // Select category (UPDATED)
+        orderPage.selectCategory("mobile-accessories");
+        Thread.sleep(1000);
+
+        // ---- NEW STEP: add an out-of-stock / edge product to cart ----
+        // This ensures mixed stock state exists in the system
+        try {
+            orderPage.addProduct("Apple Airpower Wireless Charger");
+            Thread.sleep(1500);
+            logger.info("#177 Added Apple AirPower Wireless Charger to cart");
+        } catch (Exception e) {
+            logger.warn("#177 Could not add Apple AirPower Wireless Charger: " + e.getMessage());
+        }
+        orderPage.submitAndConfirm();
 
         // Get initial product count (all products)
         int initialCount = orderPage.productCardCount();
@@ -69,9 +80,9 @@ public class Test177_InStockOnlyFilter {
             logger.info("#177 Products after 'In stock only': " + inStockCount);
 
             // In-stock count should be <= initial count
-            boolean filterWorked = inStockCount <= initialCount;
+            boolean filterWorked = inStockCount < initialCount;
             if (filterWorked) {
-                logger.info("[PASS] #177 In-stock filter applied (count: " + inStockCount + " <= " + initialCount + ")");
+                logger.info("[PASS] #177 In-stock filter applied (count: " + inStockCount + " < " + initialCount + ")");
             } else {
                 logger.warn("[WARN] #177 In-stock count unexpectedly higher");
             }
@@ -83,7 +94,7 @@ public class Test177_InStockOnlyFilter {
             int afterToggleOff = orderPage.productCardCount();
             logger.info("#177 Products after toggling off: " + afterToggleOff);
 
-            boolean toggledBack = afterToggleOff >= inStockCount;
+            boolean toggledBack = afterToggleOff > inStockCount;
             if (toggledBack) {
                 logger.info("[PASS] #177 Filter toggled off successfully");
             }
@@ -91,12 +102,11 @@ public class Test177_InStockOnlyFilter {
         } catch (Exception e) {
             logger.warn("#177 In-stock toggle not found or not interactable: " + e.getMessage());
             logger.info("[SKIP] #177 In-stock filter test skipped - toggle not available");
-            // Don't fail - toggle may not exist in this app version
+            return;
         }
 
         logger.info("[PASS] #177 In-stock only filter test complete");
     }
-
     public static void main(String[] args) {
         JUnitCore junit = new JUnitCore();
         junit.addListener(new TextListener(System.out));
