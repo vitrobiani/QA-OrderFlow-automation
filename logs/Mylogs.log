@@ -170,3 +170,14 @@ Close
 [INFO ] 2026-06-21 14:58:24.894 [main] Test152_ReturnSingleOrder - #152 Submitted return request
 [WARN ] 2026-06-21 14:58:34.946 [main] Test152_ReturnSingleOrder - [WARN] #152 No clear success/error indicator after return submit
 [INFO ] 2026-06-21 14:58:34.946 [main] Test152_ReturnSingleOrder - [PASS] #152 Return single order test complete
+[INFO ] 2026-06-21 16:40:02.357 [main] Test166_AddProductsToOrder - #166 Initial empty state: true
+[INFO ] 2026-06-21 16:40:04.465 [main] Test166_AddProductsToOrder - #166 Adding product 1: iPad Mini 2021 Starlight
+[INFO ] 2026-06-21 16:40:05.751 [main] Test166_AddProductsToOrder - #166 After adding product 1: rows=1, sum=$499.99
+[INFO ] 2026-06-21 16:40:05.751 [main] Test166_AddProductsToOrder - [PASS] #166 First product added to summary
+[INFO ] 2026-06-21 16:40:07.848 [main] Test166_AddProductsToOrder - #166 Adding product 2: American Football
+[INFO ] 2026-06-21 16:40:09.128 [main] Test166_AddProductsToOrder - #166 After adding product 2: rows=2, sum=$519.98
+[INFO ] 2026-06-21 16:40:09.128 [main] Test166_AddProductsToOrder - [PASS] #166 Sum increased after adding second product
+[INFO ] 2026-06-21 16:40:09.128 [main] Test166_AddProductsToOrder - #166 Testing quantity increase with + button...
+[INFO ] 2026-06-21 16:40:11.163 [main] Test166_AddProductsToOrder - #166 After clicking + buttons: sum=$1039.96
+[INFO ] 2026-06-21 16:40:11.163 [main] Test166_AddProductsToOrder - [PASS] #166 Plus button worked - sum increased
+[INFO ] 2026-06-21 16:40:11.163 [main] Test166_AddProductsToOrder - [PASS] #166 Add products to order test complete

@@ -49,6 +49,19 @@ public class BasePage {
         }
     }
 
+    protected void click(String Xpath) {
+        WebElement el = driver.findElement(By.xpath(Xpath));
+        // Scroll into view to avoid toast/overlay interception
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", el);
+        try {
+            Thread.sleep(200); // Brief pause for any animations
+            el.click();
+        } catch (Exception e) {
+            // Fallback to JS click if element is still intercepted
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", el);
+        }
+    }
+
     protected void type(By by, String text) {
         WebElement el = waitVisible(by);
         el.clear();

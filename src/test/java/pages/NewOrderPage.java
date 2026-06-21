@@ -144,7 +144,7 @@ public class NewOrderPage extends BasePage {
     public boolean hasConfirmDialog() { return isPresent(confirmDialog); }
 
     /** Check if confirmation dialog is showing */
-    public boolean hasConfirmDialog() { return isPresent(confirmDialog); }
+//    public boolean hasConfirmDialog() { return isPresent(confirmDialog); }
 
     /** Click confirm on the confirmation dialog */
     public void confirmOrder() {

@@ -100,11 +100,19 @@ public class Test166_AddProductsToOrder {
         // Test quantity adjustment with + button
         try {
             logger.info("#166 Testing quantity increase with + button...");
-            orderPage.click("/html/body/div/div[1]/main/div/div[5]/div[2]/div[1]/div[2]/button[2]" );
-            orderPage.click("/html/body/div/div[1]/main/div/div[5]/div[2]/div[2]/div[2]/button[2]" );
-            Thread.sleep(2000);
+            orderPage.plus(product1);
+            Thread.sleep(500);
+            orderPage.plus(product2);
+            Thread.sleep(1000);
 
-            logger.info("[PASS] #166 Plus button clicked successfully");
+            double sumAfterPlus = orderPage.orderSum();
+            logger.info("#166 After clicking + buttons: sum=$" + sumAfterPlus);
+
+            if (sumAfterPlus > sumAfter2) {
+                logger.info("[PASS] #166 Plus button worked - sum increased");
+            } else {
+                logger.warn("[WARN] #166 Sum did not increase after plus button");
+            }
 
         } catch (Exception e) {
             logger.warn("[WARN] #166 Plus button not found or not clickable: " + e.getMessage());
