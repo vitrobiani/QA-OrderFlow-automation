@@ -24,7 +24,7 @@ public class OrderHistoryPage extends BasePage {
 
     // ---- Page-level locators (confirmed) -------------------------------------
     By heading        = By.xpath("//main//h1[normalize-space()='Order History']");
-    By subtitle       = By.xpath("//main//p[contains(.,'orders this session')]");
+    By subtitle       = By.xpath("//main//p[contains(.,'this session')]");
     By emptyState     = By.xpath("//main//p[contains(.,'No orders yet')]");
 
     // ---- Hot-state locators (⚠ CONFIRM after hot discovery pass) -------------

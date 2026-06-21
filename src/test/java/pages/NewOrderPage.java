@@ -44,19 +44,19 @@ public class NewOrderPage extends BasePage {
     By inStockToggle      = By.xpath("//*[self::input or self::button or @role='switch'][contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'in stock')]");
     By priceSlider        = By.xpath("//*[@role='slider' or contains(@class,'slider')]");
 
-    // ---- Submit / cancel / update / confirm / error popup (⚠ CONFIRM) ---------
-    By submitBtn          = By.xpath("(//button|//a)[normalize-space()='Submit Order' or normalize-space()='Submit']");
-    By cancelBtn          = By.xpath("(//button|//a)[normalize-space()='Cancel']");
-    By updateBtn          = By.xpath("(//button|//a)[normalize-space()='Update']");
-    // Confirmation dialog that appears before final submit
-    By confirmDialog      = By.xpath("//*[@role='dialog' or @role='alertdialog'][.//*[contains(translate(.,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'confirm')]]");
-    By confirmBtn         = By.xpath("//button[contains(translate(.,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'confirm') or normalize-space()='Yes' or normalize-space()='OK' or normalize-space()='Submit']");
-    // Error popup - exclude confirmation dialogs
-    By errorPopup         = By.xpath("//*[(@role='alert' or contains(@class,'error') or contains(@class,'toast')) and not(contains(translate(.,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'confirm order'))]");
+    // ---- Submit / cancel / update / error popup (confirmed via DomDiscovery2) -
+    By submitBtn          = By.id("btn-submit-order");
+    By cancelBtn          = By.id("btn-cancel-order");
+    By updateBtn          = By.id("btn-update-order");
+    By errorPopup         = By.xpath("//*[@id='validation-dialog' and @data-state='open' and contains(., 'Validation Errors')]");
+    By confirmDialog      = By.xpath("//*[@id='validation-dialog' and @data-state='open' and contains(., 'Confirm Order')]");
+    By confirmBtn         = By.xpath("//*[@id='validation-dialog']//button[contains(normalize-space(),'Confirm')]");
 
-    // ---- Order summary (⚠ CONFIRM) -------------------------------------------
-    By orderSummaryRows   = By.cssSelector("[data-testid^='summary-row-']");
-    By orderSumValue      = By.xpath("//*[contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'total') or contains(translate(., 'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'sum')]");
+    // ---- Order summary (confirmed via DomDiscovery2 hot-summary dump) --------
+    // Cart rows live in a separate panel as <div id="order-item-<productId>">,
+    // each containing decrease-qty-*, quantity-input-*, increase-qty-*, remove-item-*.
+    By orderSummaryRows   = By.cssSelector("[id^='order-item-']");
+    By orderSumValue      = By.id("order-total");
 
     // ---- Actions: category / search / filters -------------------------------
     /**
@@ -109,66 +109,39 @@ public class NewOrderPage extends BasePage {
     public int productCardCount() {
         return findAll(By.xpath("//*[contains(@class,'product') or contains(@class,'card')][.//button[contains(translate(.,'ABCDEFGHIJKLMNOPQRSTUVWXYZ','abcdefghijklmnopqrstuvwxyz'),'add')]]")).size();
     }
-    public void click(String xpath) {
-        By btn = By.xpath(xpath);
-        click(btn);
-    }
-    /**
-     * Click the + button to increase quantity.
-     * Tries multiple locator strategies since DOM structure varies.
-     */
-    public void plus(String productName) {
-        By btn = By.xpath(
-            // Strategy 1: Button with "+" text near product name
-            "//*[.//*[contains(normalize-space(),'" + productName.split(" ")[0] + "')]]//button[normalize-space()='+'] | " +
-            // Strategy 2: Button with aria-label for increase
-            "//*[.//*[contains(normalize-space(),'" + productName.split(" ")[0] + "')]]//button[contains(@aria-label,'ncrease') or contains(@aria-label,'add') or contains(@aria-label,'plus')] | " +
-            // Strategy 3: Any + button in the order/cart section
-            "//section[contains(@class,'order') or contains(@class,'cart') or contains(@class,'summary')]//button[normalize-space()='+']"
-        );
-        click(btn);
-    }
 
     /**
-     * Click the - button to decrease quantity.
+     * Returns the stock count for the first product card.
+     * Stock label format: "47 in stock" → 47.
      */
-    public void minus(String productName) {
-        By btn = By.xpath(
-            "//*[.//*[contains(normalize-space(),'" + productName.split(" ")[0] + "')]]//button[normalize-space()='-'] | " +
-            "//*[.//*[contains(normalize-space(),'" + productName.split(" ")[0] + "')]]//button[contains(@aria-label,'ecrease') or contains(@aria-label,'minus') or contains(@aria-label,'subtract')] | " +
-            "//section[contains(@class,'order') or contains(@class,'cart') or contains(@class,'summary')]//button[normalize-space()='-']"
-        );
-        click(btn);
+    public int firstProductStock() {
+        By firstStock = By.cssSelector("[data-testid^='stock-']");
+        String raw = text(firstStock);
+        java.util.regex.Matcher m = java.util.regex.Pattern.compile("\\d+").matcher(raw);
+        return m.find() ? Integer.parseInt(m.group()) : 0;
     }
-
-    /**
-     * Click trash/remove button for a product.
-     */
-    public void trash(String productName) {
-        By btn = By.xpath(
-            "//*[.//*[contains(normalize-space(),'" + productName.split(" ")[0] + "')]]//button[contains(@aria-label,'remove') or contains(@aria-label,'delete') or contains(@class,'trash') or .//svg]"
-        );
-        click(btn);
-    }
-
-    /**
-     * Set quantity directly via input field.
-     */
+    public void plus(String productName)  { click(qtyButton(productName, "increase-qty-")); }
+    public void minus(String productName) { click(qtyButton(productName, "decrease-qty-")); }
+    public void trash(String productName) { click(qtyButton(productName, "remove-item-")); }
     public void setQuantity(String productName, int qty) {
-        // Try to find quantity input near the product name
-        By input = By.xpath(
-            "//*[.//*[contains(normalize-space(),'" + productName.split(" ")[0] + "')]]//input[@type='number'] | " +
-            "//input[@type='number'][contains(@aria-label,'qty') or contains(@aria-label,'uantity') or contains(@placeholder,'qty')]"
-        );
+        By input = By.xpath(orderItemXPath(productName) + "//input[starts-with(@id,'quantity-input-')]");
         if (isPresent(input)) {
             type(input, String.valueOf(qty));
         }
     }
+    private String orderItemXPath(String productName) {
+        return "//*[starts-with(@id,'order-item-')][.//*[normalize-space()='" + productName + "']]";
+    }
+    private By qtyButton(String productName, String idPrefix) {
+        return By.xpath(orderItemXPath(productName) + "//button[starts-with(@id,'" + idPrefix + "')]");
+    }
 
     // ---- Actions: submit / cancel / update -----------------------------------
-    public void submit() { click(submitBtn); }
-    public void cancel() { click(cancelBtn); }
-    public void update() { click(updateBtn); }
+    public void submit()  { click(submitBtn); }
+    public void cancel()  { click(cancelBtn); }
+    public void update()  { click(updateBtn); }
+    public void confirm() { click(confirmBtn); }
+    public boolean hasConfirmDialog() { return isPresent(confirmDialog); }
 
     /** Check if confirmation dialog is showing */
     public boolean hasConfirmDialog() { return isPresent(confirmDialog); }
@@ -203,22 +176,10 @@ public class NewOrderPage extends BasePage {
     public String  errorText()             { return text(errorPopup); }
     public List<WebElement> summaryRows()  { return findAll(orderSummaryRows); }
     public double orderSum() {
-        String raw = driver.findElement(By.xpath("/html/body/div/div[1]/main/div/div[5]/div[3]/span[2]")).getText();
-        // Remove everything except digits and dots
-        String digits = raw.replaceAll("[^0-9.]", "");
-        if (digits.isEmpty()) return 0.0;
-        // Handle multiple dots (e.g., "1,234.56" -> "1234.56" or text with multiple prices)
-        // Keep only the last dot as decimal separator
-        int lastDot = digits.lastIndexOf('.');
-        if (lastDot >= 0) {
-            String beforeDot = digits.substring(0, lastDot).replace(".", "");
-            String afterDot = digits.substring(lastDot);
-            digits = beforeDot + afterDot;
-        }
-        try {
-            return Double.parseDouble(digits);
-        } catch (NumberFormatException e) {
-            return 0.0;
-        }
+        String raw = text(orderSumValue);
+        java.util.regex.Matcher m = java.util.regex.Pattern.compile("\\d+(?:\\.\\d+)?").matcher(raw);
+        String last = null;
+        while (m.find()) last = m.group();
+        return last == null ? 0.0 : Double.parseDouble(last);
     }
 }

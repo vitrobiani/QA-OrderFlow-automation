@@ -78,13 +78,20 @@ public class Test171_SubmitGoodOrder {
         orderPage.submitAndConfirm();
         Thread.sleep(2000);
 
-        // Verify no error
+        // Verify no validation error
         boolean hasError = orderPage.hasError();
         if (hasError) {
             String errorText = orderPage.errorText();
             logger.error("[FAIL] #171 Unexpected error on submit: " + errorText);
         }
         assertFalse("Good order should not produce error", hasError);
+
+        // Submit triggers a "Confirm Order" dialog — accept it to actually place the order.
+        if (orderPage.hasConfirmDialog()) {
+            logger.info("#171 Confirm-order dialog shown, accepting");
+            orderPage.confirm();
+            Thread.sleep(2000);
+        }
 
         // Navigate to order history
         nav.goOrderHistory();

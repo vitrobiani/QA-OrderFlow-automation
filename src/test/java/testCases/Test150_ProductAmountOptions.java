@@ -47,14 +47,14 @@ public class Test150_ProductAmountOptions {
         assertTrue("New Order page not loaded", orderPage.isLoaded());
 
         orderPage.selectCategory("laptops");
-        Thread.sleep(2000);
+        Thread.sleep(5000);
 
         // Get first product name and add it
         String productName = orderPage.firstProductName();
         logger.info("#150 Testing with product: " + productName);
 
         orderPage.addFirstProduct();
-        Thread.sleep(1000);
+        Thread.sleep(5000);
 
         // Verify product appears in summary
         int initialRows = orderPage.summaryRows().size();
@@ -73,7 +73,7 @@ public class Test150_ProductAmountOptions {
         logger.info("#150 Sum before +: " + sumBefore);
 
         orderPage.plus(productName);
-        Thread.sleep(500);
+        Thread.sleep(5000);
 
         double sumAfterPlus = orderPage.orderSum();
         logger.info("#150 Sum after +: " + sumAfterPlus);
@@ -87,14 +87,14 @@ public class Test150_ProductAmountOptions {
 
         // Test - button (decrease quantity)
         orderPage.minus(productName);
-        Thread.sleep(500);
+        Thread.sleep(5000);
 
         double sumAfterMinus = orderPage.orderSum();
         logger.info("#150 Sum after -: " + sumAfterMinus);
 
         // Test trash (remove product)
         orderPage.trash(productName);
-        Thread.sleep(500);
+        Thread.sleep(5000);
 
         boolean removed = orderPage.hasSummaryEmptyState() || orderPage.summaryRows().size() < initialRows;
         if (removed) {

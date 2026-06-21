@@ -45,7 +45,7 @@ public class Test152_ReturnSingleOrder {
         NewOrderPage orderPage = new NewOrderPage(driver);
         ReturnsPage returnsPage = new ReturnsPage(driver);
 
-        // First, submit an order to have something to return
+        // ---- Step 1: submit a good order (mirrors Test171) ------------------
         driver.get(base_test_class.BASE_URL);
         nav.goNewOrder();
         Thread.sleep(1000);
@@ -59,15 +59,20 @@ public class Test152_ReturnSingleOrder {
         orderPage.addFirstProduct();
         Thread.sleep(1000);
 
-        // Submit the order
         orderPage.submit();
         Thread.sleep(2000);
 
-        // Verify no error
-        assertFalse("Order should submit without error", orderPage.hasError());
-        logger.info("#152 Order submitted successfully");
+        assertFalse("Order should submit without validation error", orderPage.hasError());
 
-        // Navigate to Returns page
+        // Accept the post-submit "Confirm Order" dialog to actually place the order.
+        if (orderPage.hasConfirmDialog()) {
+            logger.info("#152 Confirm-order dialog shown, accepting");
+            orderPage.confirm();
+            Thread.sleep(2000);
+        }
+        logger.info("#152 Order submitted and confirmed");
+
+        // ---- Step 2: navigate to Returns ------------------------------------
         nav.goReturns();
         Thread.sleep(1500);
 
@@ -89,7 +94,7 @@ public class Test152_ReturnSingleOrder {
             try {
                 returnsPage.selectProduct(productName);
                 logger.info("#152 Selected product for return: " + productName);
-                Thread.sleep(500);
+                Thread.sleep(1000);
             } catch (Exception e) {
                 logger.warn("#152 Could not select product by exact name, trying first option");
             }

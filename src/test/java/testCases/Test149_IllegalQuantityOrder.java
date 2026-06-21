@@ -46,7 +46,7 @@ public class Test149_IllegalQuantityOrder {
         driver.get(base_test_class.BASE_URL);
 
         // Build order with qty > stock (99999 should exceed any stock)
-        String category = "laptops";
+        String category = "mobile-accessories";
         orderPage = new NewOrderPage(driver);
 
         driver.get(base_test_class.BASE_URL + "/order");
@@ -56,13 +56,14 @@ public class Test149_IllegalQuantityOrder {
         Thread.sleep(2000);
 
         String productName = orderPage.firstProductName();
-        logger.info("#149 Testing with product: " + productName);
+        int stock = orderPage.firstProductStock();
+        logger.info("#149 Testing with product: " + productName + " (stock=" + stock + ")");
 
         orderPage.addFirstProduct();
         Thread.sleep(1000);
 
-        // Set illegal quantity
-        int illegalQty = 99999;
+        // Set illegal quantity = stock + 1 → triggers only R1 (qty > stock), avoids R2 sum cap.
+        int illegalQty = stock + 1;
         orderPage.setQuantity(productName, illegalQty);
         logger.info("#149 Set quantity to: " + illegalQty);
         Thread.sleep(500);
