@@ -1,256 +1,257 @@
-[INFO ] 2026-06-21 22:01:08.750 [main] Test142_CategorySelectionCold - #142 Testing 6 categories: [furniture, groceries, laptops, mobile-accessories, smartphones, sports-accessories]
-[INFO ] 2026-06-21 22:01:08.756 [main] Test142_CategorySelectionCold - #142 ========== Testing category: furniture ==========
-[INFO ] 2026-06-21 22:01:11.363 [main] Test142_CategorySelectionCold - #142 [furniture] Cold state confirmed: empty products state shown
-[INFO ] 2026-06-21 22:01:11.474 [main] Test142_CategorySelectionCold - #142 [furniture] Selected category from dropdown
-[INFO ] 2026-06-21 22:01:13.563 [main] Test142_CategorySelectionCold - #142 [furniture] Dropdown confirmed: furniture
-[INFO ] 2026-06-21 22:01:18.651 [main] Test142_CategorySelectionCold - [PASS] #142 [furniture] Category loaded correctly: 13 products, first: Bedside Table African Cherry
-[INFO ] 2026-06-21 22:01:19.471 [main] Test142_CategorySelectionCold - #142 ========== Testing category: groceries ==========
-[INFO ] 2026-06-21 22:01:21.395 [main] Test142_CategorySelectionCold - #142 [groceries] Cold state confirmed: empty products state shown
-[INFO ] 2026-06-21 22:01:21.505 [main] Test142_CategorySelectionCold - #142 [groceries] Selected category from dropdown
-[INFO ] 2026-06-21 22:01:23.581 [main] Test142_CategorySelectionCold - #142 [groceries] Dropdown confirmed: groceries
-[INFO ] 2026-06-21 22:01:28.679 [main] Test142_CategorySelectionCold - [PASS] #142 [groceries] Category loaded correctly: 10 products, first: Apple
-[INFO ] 2026-06-21 22:01:29.492 [main] Test142_CategorySelectionCold - #142 ========== Testing category: laptops ==========
-[INFO ] 2026-06-21 22:01:31.465 [main] Test142_CategorySelectionCold - #142 [laptops] Cold state confirmed: empty products state shown
-[INFO ] 2026-06-21 22:01:31.592 [main] Test142_CategorySelectionCold - #142 [laptops] Selected category from dropdown
-[INFO ] 2026-06-21 22:01:33.765 [main] Test142_CategorySelectionCold - #142 [laptops] Dropdown confirmed: laptops
-[INFO ] 2026-06-21 22:01:38.826 [main] Test142_CategorySelectionCold - [PASS] #142 [laptops] Category loaded correctly: 3 products, first: iPad Mini 2021 Starlight
-[INFO ] 2026-06-21 22:01:39.637 [main] Test142_CategorySelectionCold - #142 ========== Testing category: mobile-accessories ==========
-[INFO ] 2026-06-21 22:01:41.543 [main] Test142_CategorySelectionCold - #142 [mobile-accessories] Cold state confirmed: empty products state shown
-[INFO ] 2026-06-21 22:01:41.620 [main] Test142_CategorySelectionCold - #142 [mobile-accessories] Selected category from dropdown
-[INFO ] 2026-06-21 22:01:43.706 [main] Test142_CategorySelectionCold - #142 [mobile-accessories] Dropdown confirmed: mobile-accessories
-[INFO ] 2026-06-21 22:01:48.802 [main] Test142_CategorySelectionCold - [PASS] #142 [mobile-accessories] Category loaded correctly: 10 products, first: Amazon Echo Plus
-[INFO ] 2026-06-21 22:01:49.594 [main] Test142_CategorySelectionCold - #142 ========== Testing category: smartphones ==========
-[INFO ] 2026-06-21 22:01:51.541 [main] Test142_CategorySelectionCold - #142 [smartphones] Cold state confirmed: empty products state shown
-[INFO ] 2026-06-21 22:01:51.618 [main] Test142_CategorySelectionCold - #142 [smartphones] Selected category from dropdown
-[INFO ] 2026-06-21 22:01:53.715 [main] Test142_CategorySelectionCold - #142 [smartphones] Dropdown confirmed: smartphones
-[INFO ] 2026-06-21 22:01:58.809 [main] Test142_CategorySelectionCold - [PASS] #142 [smartphones] Category loaded correctly: 10 products, first: iPhone 5s
-[INFO ] 2026-06-21 22:01:59.613 [main] Test142_CategorySelectionCold - #142 ========== Testing category: sports-accessories ==========
-[INFO ] 2026-06-21 22:02:01.557 [main] Test142_CategorySelectionCold - #142 [sports-accessories] Cold state confirmed: empty products state shown
-[INFO ] 2026-06-21 22:02:01.632 [main] Test142_CategorySelectionCold - #142 [sports-accessories] Selected category from dropdown
-[INFO ] 2026-06-21 22:02:03.741 [main] Test142_CategorySelectionCold - #142 [sports-accessories] Dropdown confirmed: sports-accessories
-[INFO ] 2026-06-21 22:02:08.835 [main] Test142_CategorySelectionCold - [PASS] #142 [sports-accessories] Category loaded correctly: 10 products, first: American Football
-[INFO ] 2026-06-21 22:02:09.641 [main] Test142_CategorySelectionCold - #142 ========== SUMMARY ==========
-[INFO ] 2026-06-21 22:02:09.642 [main] Test142_CategorySelectionCold - #142 Passed: 6/6
-[INFO ] 2026-06-21 22:02:09.642 [main] Test142_CategorySelectionCold - [PASS] #142 Category selection (cold) - all 6 categories verified
-[INFO ] 2026-06-21 22:02:11.704 [main] Test146_CategorySelectionHot - #146 Testing hot switching through 6 categories: [furniture, groceries, laptops, mobile-accessories, smartphones, sports-accessories]
-[INFO ] 2026-06-21 22:02:13.243 [main] Test146_CategorySelectionHot - #146 ========== Initial category: furniture ==========
-[INFO ] 2026-06-21 22:02:15.500 [main] Test146_CategorySelectionHot - #146 [furniture] Initial: 13 products, first: Bedside Table African Cherry
-[INFO ] 2026-06-21 22:02:15.501 [main] Test146_CategorySelectionHot - [PASS] #146 [furniture] Initial category loaded correctly
-[INFO ] 2026-06-21 22:02:15.501 [main] Test146_CategorySelectionHot - #146 ========== Switching: furniture -> groceries ==========
-[INFO ] 2026-06-21 22:02:17.657 [main] Test146_CategorySelectionHot - #146 [groceries] Dropdown confirmed: groceries
-[INFO ] 2026-06-21 22:02:17.710 [main] Test146_CategorySelectionHot - #146 [groceries] Products: 18, first: Bedside Table African Cherry
-[ERROR] 2026-06-21 22:02:17.711 [main] Test146_CategorySelectionHot - [FAIL] #146 [furniture -> groceries] PRODUCTS DID NOT CHANGE!
-[ERROR] 2026-06-21 22:02:17.711 [main] Test146_CategorySelectionHot -        Previous first product: Bedside Table African Cherry
-[ERROR] 2026-06-21 22:02:17.711 [main] Test146_CategorySelectionHot -        Current first product:  Bedside Table African Cherry
-[ERROR] 2026-06-21 22:02:17.711 [main] Test146_CategorySelectionHot -        This indicates the category switch didn't actually work!
-[INFO ] 2026-06-21 22:02:17.711 [main] Test146_CategorySelectionHot - #146 ========== Switching: groceries -> laptops ==========
-[INFO ] 2026-06-21 22:02:19.865 [main] Test146_CategorySelectionHot - #146 [laptops] Dropdown confirmed: laptops
-[INFO ] 2026-06-21 22:02:19.897 [main] Test146_CategorySelectionHot - #146 [laptops] Products: 11, first: Bedside Table African Cherry
-[ERROR] 2026-06-21 22:02:19.897 [main] Test146_CategorySelectionHot - [FAIL] #146 [groceries -> laptops] PRODUCTS DID NOT CHANGE!
-[ERROR] 2026-06-21 22:02:19.898 [main] Test146_CategorySelectionHot -        Previous first product: Bedside Table African Cherry
-[ERROR] 2026-06-21 22:02:19.898 [main] Test146_CategorySelectionHot -        Current first product:  Bedside Table African Cherry
-[ERROR] 2026-06-21 22:02:19.898 [main] Test146_CategorySelectionHot -        This indicates the category switch didn't actually work!
-[INFO ] 2026-06-21 22:02:19.898 [main] Test146_CategorySelectionHot - #146 ========== Switching: laptops -> mobile-accessories ==========
-[INFO ] 2026-06-21 22:02:22.056 [main] Test146_CategorySelectionHot - #146 [mobile-accessories] Dropdown confirmed: mobile-accessories
-[INFO ] 2026-06-21 22:02:22.089 [main] Test146_CategorySelectionHot - #146 [mobile-accessories] Products: 18, first: Bedside Table African Cherry
-[ERROR] 2026-06-21 22:02:22.089 [main] Test146_CategorySelectionHot - [FAIL] #146 [laptops -> mobile-accessories] PRODUCTS DID NOT CHANGE!
-[ERROR] 2026-06-21 22:02:22.090 [main] Test146_CategorySelectionHot -        Previous first product: Bedside Table African Cherry
-[ERROR] 2026-06-21 22:02:22.090 [main] Test146_CategorySelectionHot -        Current first product:  Bedside Table African Cherry
-[ERROR] 2026-06-21 22:02:22.090 [main] Test146_CategorySelectionHot -        This indicates the category switch didn't actually work!
-[INFO ] 2026-06-21 22:02:22.090 [main] Test146_CategorySelectionHot - #146 ========== Switching: mobile-accessories -> smartphones ==========
-[INFO ] 2026-06-21 22:02:24.274 [main] Test146_CategorySelectionHot - #146 [smartphones] Dropdown confirmed: smartphones
-[INFO ] 2026-06-21 22:02:24.314 [main] Test146_CategorySelectionHot - #146 [smartphones] Products: 18, first: Bedside Table African Cherry
-[ERROR] 2026-06-21 22:02:24.315 [main] Test146_CategorySelectionHot - [FAIL] #146 [mobile-accessories -> smartphones] PRODUCTS DID NOT CHANGE!
-[ERROR] 2026-06-21 22:02:24.315 [main] Test146_CategorySelectionHot -        Previous first product: Bedside Table African Cherry
-[ERROR] 2026-06-21 22:02:24.315 [main] Test146_CategorySelectionHot -        Current first product:  Bedside Table African Cherry
-[ERROR] 2026-06-21 22:02:24.315 [main] Test146_CategorySelectionHot -        This indicates the category switch didn't actually work!
-[INFO ] 2026-06-21 22:02:24.315 [main] Test146_CategorySelectionHot - #146 ========== Switching: smartphones -> sports-accessories ==========
-[INFO ] 2026-06-21 22:02:26.545 [main] Test146_CategorySelectionHot - #146 [sports-accessories] Dropdown confirmed: sports-accessories
-[INFO ] 2026-06-21 22:02:26.579 [main] Test146_CategorySelectionHot - #146 [sports-accessories] Products: 18, first: Bedside Table African Cherry
-[ERROR] 2026-06-21 22:02:26.579 [main] Test146_CategorySelectionHot - [FAIL] #146 [smartphones -> sports-accessories] PRODUCTS DID NOT CHANGE!
-[ERROR] 2026-06-21 22:02:26.579 [main] Test146_CategorySelectionHot -        Previous first product: Bedside Table African Cherry
-[ERROR] 2026-06-21 22:02:26.579 [main] Test146_CategorySelectionHot -        Current first product:  Bedside Table African Cherry
-[ERROR] 2026-06-21 22:02:26.579 [main] Test146_CategorySelectionHot -        This indicates the category switch didn't actually work!
-[INFO ] 2026-06-21 22:02:26.579 [main] Test146_CategorySelectionHot - #146 ========== SUMMARY ==========
-[INFO ] 2026-06-21 22:02:26.580 [main] Test146_CategorySelectionHot - #146 Total switches attempted: 5
-[INFO ] 2026-06-21 22:02:26.580 [main] Test146_CategorySelectionHot - #146 Passed: 1/6
-[ERROR] 2026-06-21 22:02:26.580 [main] Test146_CategorySelectionHot - #146 Failed: 5/6
-[ERROR] 2026-06-21 22:02:26.580 [main] Test146_CategorySelectionHot - #146 NOTE: If 'STUCK' errors appeared, there's a bug preventing category switching!
-[INFO ] 2026-06-21 22:02:33.168 [main] Test149_IllegalQuantityOrder - #149 Testing with product: Amazon Echo Plus (stock=61)
-[INFO ] 2026-06-21 22:02:34.607 [main] Test149_IllegalQuantityOrder - #149 Set quantity to: 62
-[INFO ] 2026-06-21 22:02:36.990 [main] Test149_IllegalQuantityOrder - [PASS] #149 Error popup shown: Validation Errors
+[INFO ] 2026-06-21 23:33:25.808 [main] Test142_CategorySelectionCold - #142 Testing 6 categories: [furniture, groceries, laptops, mobile-accessories, smartphones, sports-accessories]
+[INFO ] 2026-06-21 23:33:25.812 [main] Test142_CategorySelectionCold - #142 ========== Testing category: furniture ==========
+[INFO ] 2026-06-21 23:33:28.331 [main] Test142_CategorySelectionCold - #142 [furniture] Cold state confirmed: empty products state shown
+[INFO ] 2026-06-21 23:33:28.430 [main] Test142_CategorySelectionCold - #142 [furniture] Selected category from dropdown
+[INFO ] 2026-06-21 23:33:30.508 [main] Test142_CategorySelectionCold - #142 [furniture] Dropdown confirmed: furniture
+[INFO ] 2026-06-21 23:33:35.612 [main] Test142_CategorySelectionCold - [PASS] #142 [furniture] Category loaded correctly: 13 products, first: Bedside Table African Cherry
+[INFO ] 2026-06-21 23:33:36.410 [main] Test142_CategorySelectionCold - #142 ========== Testing category: groceries ==========
+[INFO ] 2026-06-21 23:33:38.336 [main] Test142_CategorySelectionCold - #142 [groceries] Cold state confirmed: empty products state shown
+[INFO ] 2026-06-21 23:33:38.437 [main] Test142_CategorySelectionCold - #142 [groceries] Selected category from dropdown
+[INFO ] 2026-06-21 23:33:40.530 [main] Test142_CategorySelectionCold - #142 [groceries] Dropdown confirmed: groceries
+[INFO ] 2026-06-21 23:33:45.804 [main] Test142_CategorySelectionCold - [PASS] #142 [groceries] Category loaded correctly: 10 products, first: Apple
+[INFO ] 2026-06-21 23:33:46.601 [main] Test142_CategorySelectionCold - #142 ========== Testing category: laptops ==========
+[INFO ] 2026-06-21 23:33:48.507 [main] Test142_CategorySelectionCold - #142 [laptops] Cold state confirmed: empty products state shown
+[INFO ] 2026-06-21 23:33:48.580 [main] Test142_CategorySelectionCold - #142 [laptops] Selected category from dropdown
+[INFO ] 2026-06-21 23:33:50.663 [main] Test142_CategorySelectionCold - #142 [laptops] Dropdown confirmed: laptops
+[INFO ] 2026-06-21 23:33:55.732 [main] Test142_CategorySelectionCold - [PASS] #142 [laptops] Category loaded correctly: 3 products, first: iPad Mini 2021 Starlight
+[INFO ] 2026-06-21 23:33:56.525 [main] Test142_CategorySelectionCold - #142 ========== Testing category: mobile-accessories ==========
+[INFO ] 2026-06-21 23:33:58.454 [main] Test142_CategorySelectionCold - #142 [mobile-accessories] Cold state confirmed: empty products state shown
+[INFO ] 2026-06-21 23:33:58.525 [main] Test142_CategorySelectionCold - #142 [mobile-accessories] Selected category from dropdown
+[INFO ] 2026-06-21 23:34:00.600 [main] Test142_CategorySelectionCold - #142 [mobile-accessories] Dropdown confirmed: mobile-accessories
+[INFO ] 2026-06-21 23:34:05.691 [main] Test142_CategorySelectionCold - [PASS] #142 [mobile-accessories] Category loaded correctly: 10 products, first: Amazon Echo Plus
+[INFO ] 2026-06-21 23:34:06.491 [main] Test142_CategorySelectionCold - #142 ========== Testing category: smartphones ==========
+[INFO ] 2026-06-21 23:34:08.389 [main] Test142_CategorySelectionCold - #142 [smartphones] Cold state confirmed: empty products state shown
+[INFO ] 2026-06-21 23:34:08.460 [main] Test142_CategorySelectionCold - #142 [smartphones] Selected category from dropdown
+[INFO ] 2026-06-21 23:34:10.553 [main] Test142_CategorySelectionCold - #142 [smartphones] Dropdown confirmed: smartphones
+[INFO ] 2026-06-21 23:34:15.642 [main] Test142_CategorySelectionCold - [PASS] #142 [smartphones] Category loaded correctly: 10 products, first: iPhone 5s
+[INFO ] 2026-06-21 23:34:16.443 [main] Test142_CategorySelectionCold - #142 ========== Testing category: sports-accessories ==========
+[INFO ] 2026-06-21 23:34:18.450 [main] Test142_CategorySelectionCold - #142 [sports-accessories] Cold state confirmed: empty products state shown
+[INFO ] 2026-06-21 23:34:18.522 [main] Test142_CategorySelectionCold - #142 [sports-accessories] Selected category from dropdown
+[INFO ] 2026-06-21 23:34:20.617 [main] Test142_CategorySelectionCold - #142 [sports-accessories] Dropdown confirmed: sports-accessories
+[INFO ] 2026-06-21 23:34:25.713 [main] Test142_CategorySelectionCold - [PASS] #142 [sports-accessories] Category loaded correctly: 10 products, first: American Football
+[INFO ] 2026-06-21 23:34:26.503 [main] Test142_CategorySelectionCold - #142 ========== SUMMARY ==========
+[INFO ] 2026-06-21 23:34:26.504 [main] Test142_CategorySelectionCold - #142 Passed: 6/6
+[INFO ] 2026-06-21 23:34:26.504 [main] Test142_CategorySelectionCold - [PASS] #142 Category selection (cold) - all 6 categories verified
+[INFO ] 2026-06-21 23:34:28.517 [main] Test146_CategorySelectionHot - #146 Testing hot switching through 6 categories: [furniture, groceries, laptops, mobile-accessories, smartphones, sports-accessories]
+[INFO ] 2026-06-21 23:34:30.014 [main] Test146_CategorySelectionHot - #146 ========== Initial category: furniture ==========
+[INFO ] 2026-06-21 23:34:32.243 [main] Test146_CategorySelectionHot - #146 [furniture] Initial: 13 products, first: Bedside Table African Cherry
+[INFO ] 2026-06-21 23:34:32.243 [main] Test146_CategorySelectionHot - [PASS] #146 [furniture] Initial category loaded correctly
+[INFO ] 2026-06-21 23:34:32.243 [main] Test146_CategorySelectionHot - #146 ========== Switching: furniture -> groceries ==========
+[INFO ] 2026-06-21 23:34:34.393 [main] Test146_CategorySelectionHot - #146 [groceries] Dropdown confirmed: groceries
+[INFO ] 2026-06-21 23:34:34.426 [main] Test146_CategorySelectionHot - #146 [groceries] Products: 18, first: Bedside Table African Cherry
+[ERROR] 2026-06-21 23:34:34.426 [main] Test146_CategorySelectionHot - [FAIL] #146 [furniture -> groceries] PRODUCTS DID NOT CHANGE!
+[ERROR] 2026-06-21 23:34:34.426 [main] Test146_CategorySelectionHot -        Previous first product: Bedside Table African Cherry
+[ERROR] 2026-06-21 23:34:34.426 [main] Test146_CategorySelectionHot -        Current first product:  Bedside Table African Cherry
+[ERROR] 2026-06-21 23:34:34.427 [main] Test146_CategorySelectionHot -        This indicates the category switch didn't actually work!
+[INFO ] 2026-06-21 23:34:34.427 [main] Test146_CategorySelectionHot - #146 ========== Switching: groceries -> laptops ==========
+[INFO ] 2026-06-21 23:34:36.576 [main] Test146_CategorySelectionHot - #146 [laptops] Dropdown confirmed: laptops
+[INFO ] 2026-06-21 23:34:36.606 [main] Test146_CategorySelectionHot - #146 [laptops] Products: 11, first: Bedside Table African Cherry
+[ERROR] 2026-06-21 23:34:36.606 [main] Test146_CategorySelectionHot - [FAIL] #146 [groceries -> laptops] PRODUCTS DID NOT CHANGE!
+[ERROR] 2026-06-21 23:34:36.607 [main] Test146_CategorySelectionHot -        Previous first product: Bedside Table African Cherry
+[ERROR] 2026-06-21 23:34:36.607 [main] Test146_CategorySelectionHot -        Current first product:  Bedside Table African Cherry
+[ERROR] 2026-06-21 23:34:36.607 [main] Test146_CategorySelectionHot -        This indicates the category switch didn't actually work!
+[INFO ] 2026-06-21 23:34:36.607 [main] Test146_CategorySelectionHot - #146 ========== Switching: laptops -> mobile-accessories ==========
+[INFO ] 2026-06-21 23:34:38.758 [main] Test146_CategorySelectionHot - #146 [mobile-accessories] Dropdown confirmed: mobile-accessories
+[INFO ] 2026-06-21 23:34:38.789 [main] Test146_CategorySelectionHot - #146 [mobile-accessories] Products: 18, first: Bedside Table African Cherry
+[ERROR] 2026-06-21 23:34:38.789 [main] Test146_CategorySelectionHot - [FAIL] #146 [laptops -> mobile-accessories] PRODUCTS DID NOT CHANGE!
+[ERROR] 2026-06-21 23:34:38.789 [main] Test146_CategorySelectionHot -        Previous first product: Bedside Table African Cherry
+[ERROR] 2026-06-21 23:34:38.790 [main] Test146_CategorySelectionHot -        Current first product:  Bedside Table African Cherry
+[ERROR] 2026-06-21 23:34:38.790 [main] Test146_CategorySelectionHot -        This indicates the category switch didn't actually work!
+[INFO ] 2026-06-21 23:34:38.790 [main] Test146_CategorySelectionHot - #146 ========== Switching: mobile-accessories -> smartphones ==========
+[INFO ] 2026-06-21 23:34:40.951 [main] Test146_CategorySelectionHot - #146 [smartphones] Dropdown confirmed: smartphones
+[INFO ] 2026-06-21 23:34:40.986 [main] Test146_CategorySelectionHot - #146 [smartphones] Products: 18, first: Bedside Table African Cherry
+[ERROR] 2026-06-21 23:34:40.987 [main] Test146_CategorySelectionHot - [FAIL] #146 [mobile-accessories -> smartphones] PRODUCTS DID NOT CHANGE!
+[ERROR] 2026-06-21 23:34:40.987 [main] Test146_CategorySelectionHot -        Previous first product: Bedside Table African Cherry
+[ERROR] 2026-06-21 23:34:40.987 [main] Test146_CategorySelectionHot -        Current first product:  Bedside Table African Cherry
+[ERROR] 2026-06-21 23:34:40.987 [main] Test146_CategorySelectionHot -        This indicates the category switch didn't actually work!
+[INFO ] 2026-06-21 23:34:40.987 [main] Test146_CategorySelectionHot - #146 ========== Switching: smartphones -> sports-accessories ==========
+[INFO ] 2026-06-21 23:34:43.174 [main] Test146_CategorySelectionHot - #146 [sports-accessories] Dropdown confirmed: sports-accessories
+[INFO ] 2026-06-21 23:34:43.208 [main] Test146_CategorySelectionHot - #146 [sports-accessories] Products: 18, first: Bedside Table African Cherry
+[ERROR] 2026-06-21 23:34:43.208 [main] Test146_CategorySelectionHot - [FAIL] #146 [smartphones -> sports-accessories] PRODUCTS DID NOT CHANGE!
+[ERROR] 2026-06-21 23:34:43.208 [main] Test146_CategorySelectionHot -        Previous first product: Bedside Table African Cherry
+[ERROR] 2026-06-21 23:34:43.208 [main] Test146_CategorySelectionHot -        Current first product:  Bedside Table African Cherry
+[ERROR] 2026-06-21 23:34:43.208 [main] Test146_CategorySelectionHot -        This indicates the category switch didn't actually work!
+[INFO ] 2026-06-21 23:34:43.208 [main] Test146_CategorySelectionHot - #146 ========== SUMMARY ==========
+[INFO ] 2026-06-21 23:34:43.209 [main] Test146_CategorySelectionHot - #146 Total switches attempted: 5
+[INFO ] 2026-06-21 23:34:43.209 [main] Test146_CategorySelectionHot - #146 Passed: 1/6
+[ERROR] 2026-06-21 23:34:43.210 [main] Test146_CategorySelectionHot - #146 Failed: 5/6
+[ERROR] 2026-06-21 23:34:43.210 [main] Test146_CategorySelectionHot - #146 NOTE: If 'STUCK' errors appeared, there's a bug preventing category switching!
+[INFO ] 2026-06-21 23:34:49.648 [main] Test149_IllegalQuantityOrder - #149 Testing with product: Amazon Echo Plus (stock=61)
+[INFO ] 2026-06-21 23:34:51.060 [main] Test149_IllegalQuantityOrder - #149 Set quantity to: 62
+[INFO ] 2026-06-21 23:34:53.419 [main] Test149_IllegalQuantityOrder - [PASS] #149 Error popup shown: Validation Errors
 Please fix the following issues:
 Requested quantity (62) for "Amazon Echo Plus" exceeds available stock (61).
 Cancel Order
 Update Order
 Close
-[INFO ] 2026-06-21 22:02:36.990 [main] Test149_IllegalQuantityOrder - [PASS] #149 Error message mentions stock/quantity issue
-[INFO ] 2026-06-21 22:02:36.990 [main] Test149_IllegalQuantityOrder - [PASS] #149 Illegal quantity order test complete
-[INFO ] 2026-06-21 22:02:45.437 [main] Test150_ProductAmountOptions - #150 Testing with product: iPad Mini 2021 Starlight
-[INFO ] 2026-06-21 22:02:50.743 [main] Test150_ProductAmountOptions - #150 Initial summary rows: 1
-[INFO ] 2026-06-21 22:02:50.743 [main] Test150_ProductAmountOptions - [PASS] #150 Product added to summary
-[INFO ] 2026-06-21 22:02:50.775 [main] Test150_ProductAmountOptions - #150 Sum before +: 499.99
-[INFO ] 2026-06-21 22:02:56.101 [main] Test150_ProductAmountOptions - #150 Sum after +: 999.98
-[INFO ] 2026-06-21 22:02:56.101 [main] Test150_ProductAmountOptions - [PASS] #150 Plus button increased sum
-[INFO ] 2026-06-21 22:03:01.413 [main] Test150_ProductAmountOptions - #150 Sum after -: 499.99
-[INFO ] 2026-06-21 22:03:06.720 [main] Test150_ProductAmountOptions - [PASS] #150 Trash button removed product
-[INFO ] 2026-06-21 22:03:06.722 [main] Test150_ProductAmountOptions - [PASS] #150 Product amount options test complete
-[INFO ] 2026-06-21 22:03:11.270 [main] Test152_ReturnSingleOrder - #152 Ordering product to return later: iPad Mini 2021 Starlight
-[INFO ] 2026-06-21 22:03:18.496 [main] Test152_ReturnSingleOrder - #152 Confirm-order dialog shown, accepting
-[INFO ] 2026-06-21 22:03:19.793 [main] Test152_ReturnSingleOrder - #152 Order submitted and confirmed
-[INFO ] 2026-06-21 22:03:26.163 [main] Test152_ReturnSingleOrder - #152 Returns form available (order to return exists)
-[INFO ] 2026-06-21 22:03:26.268 [main] Test152_ReturnSingleOrder - #152 Selected product for return: iPad Mini 2021 Starlight
-[INFO ] 2026-06-21 22:03:26.877 [main] Test152_ReturnSingleOrder - #152 Set return quantity to 1
-[INFO ] 2026-06-21 22:03:28.681 [main] Test152_ReturnSingleOrder - #152 Submitted return request
-[WARN ] 2026-06-21 22:03:38.793 [main] Test152_ReturnSingleOrder - [WARN] #152 No clear success/error indicator after return submit
-[INFO ] 2026-06-21 22:03:38.795 [main] Test152_ReturnSingleOrder - [PASS] #152 Return single order test complete
-[INFO ] 2026-06-21 22:03:42.434 [main] Test153_HomeNavigation - [PASS] #153 New Order -> Home
-[INFO ] 2026-06-21 22:03:43.336 [main] Test153_HomeNavigation - [PASS] #153 Order History -> Home
-[INFO ] 2026-06-21 22:03:44.266 [main] Test153_HomeNavigation - [PASS] #153 Returns -> Home
-[INFO ] 2026-06-21 22:03:44.266 [main] Test153_HomeNavigation - [PASS] #153 Home navigation - all entry points OK
-[INFO ] 2026-06-21 22:03:47.530 [main] Test154_NewOrderNavigation - [PASS] #154 Home -> New Order
-[INFO ] 2026-06-21 22:03:48.476 [main] Test154_NewOrderNavigation - [PASS] #154 Order History -> New Order
-[INFO ] 2026-06-21 22:03:49.352 [main] Test154_NewOrderNavigation - [PASS] #154 Returns -> New Order
-[INFO ] 2026-06-21 22:03:50.293 [main] Test154_NewOrderNavigation - [PASS] #154 Carousel -> New Order
-[INFO ] 2026-06-21 22:03:50.294 [main] Test154_NewOrderNavigation - [PASS] #154 New Order navigation - all entry points OK
-[INFO ] 2026-06-21 22:03:53.606 [main] Test155_OrderHistoryNavigation - [PASS] #155 Home -> Order History
-[INFO ] 2026-06-21 22:03:54.582 [main] Test155_OrderHistoryNavigation - [PASS] #155 New Order -> Order History
-[INFO ] 2026-06-21 22:03:55.461 [main] Test155_OrderHistoryNavigation - [PASS] #155 Returns -> Order History
-[INFO ] 2026-06-21 22:03:56.461 [main] Test155_OrderHistoryNavigation - [PASS] #155 Carousel -> Order History
-[INFO ] 2026-06-21 22:03:56.461 [main] Test155_OrderHistoryNavigation - [PASS] #155 Order History navigation - all entry points OK
-[INFO ] 2026-06-21 22:03:59.767 [main] Test156_ReturnsNavigation - [PASS] #156 Home -> Returns
-[INFO ] 2026-06-21 22:04:00.717 [main] Test156_ReturnsNavigation - [PASS] #156 New Order -> Returns
-[INFO ] 2026-06-21 22:04:01.663 [main] Test156_ReturnsNavigation - [PASS] #156 Order History -> Returns
-[INFO ] 2026-06-21 22:04:02.559 [main] Test156_ReturnsNavigation - [PASS] #156 Carousel -> Returns
-[INFO ] 2026-06-21 22:04:02.559 [main] Test156_ReturnsNavigation - [PASS] #156 Returns navigation - all entry points OK
-[INFO ] 2026-06-21 22:04:05.799 [main] Test156_ReturnsNavigation - [PASS] #156 Home -> Returns
-[ERROR] 2026-06-21 22:04:06.710 [main] Test156_ReturnsNavigation - [FAIL] #157 New Order -> Home (Logo): not on home screen
-[INFO ] 2026-06-21 22:04:11.724 [main] Test158_ReturnNonExistOrder - [PASS] #158 Returns page shows cold empty state (no orders to return)
-[INFO ] 2026-06-21 22:04:11.724 [main] Test158_ReturnNonExistOrder -        [DERIVED] Interpretation: Cannot return non-existent order because form is not rendered
-[WARN ] 2026-06-21 22:04:11.724 [main] Test158_ReturnNonExistOrder - **** #158 is a DERIVED test (no steps in PractiTest export) ****
-[WARN ] 2026-06-21 22:04:11.725 [main] Test158_ReturnNonExistOrder -      Confirm expected behavior with stakeholders
-[INFO ] 2026-06-21 22:04:11.725 [main] Test158_ReturnNonExistOrder - [PASS] #158 Return non-exist order test complete
-[INFO ] 2026-06-21 22:04:14.996 [main] Test161_ApiProductFetch - [PASS] #161 furniture -> 5 products, all descriptors present
-[INFO ] 2026-06-21 22:04:15.212 [main] Test161_ApiProductFetch - [PASS] #161 groceries -> 10 products, all descriptors present
-[INFO ] 2026-06-21 22:04:15.406 [main] Test161_ApiProductFetch - [PASS] #161 laptops -> 5 products, all descriptors present
-[INFO ] 2026-06-21 22:04:15.576 [main] Test161_ApiProductFetch - [PASS] #161 mobile-accessories -> 10 products, all descriptors present
-[INFO ] 2026-06-21 22:04:15.762 [main] Test161_ApiProductFetch - [PASS] #161 smartphones -> 10 products, all descriptors present
-[INFO ] 2026-06-21 22:04:15.930 [main] Test161_ApiProductFetch - [PASS] #161 sports-accessories -> 10 products, all descriptors present
-[INFO ] 2026-06-21 22:04:15.930 [main] Test161_ApiProductFetch - [PASS] #161 API product fetch — all categories OK
-[INFO ] 2026-06-21 22:04:20.903 [main] Test163_CancelOrder - #163 Testing with product: iPad Mini 2021 Starlight (original stock=47)
-[INFO ] 2026-06-21 22:04:24.315 [main] Test163_CancelOrder - #163 Validation error triggered as expected
-[INFO ] 2026-06-21 22:04:27.108 [main] Test163_CancelOrder - #163 Cancel button clicked
-[INFO ] 2026-06-21 22:04:27.133 [main] Test163_CancelOrder - #163 Stock after cancel: 0
-[ERROR] 2026-06-21 22:04:27.133 [main] Test163_CancelOrder - [FAIL] #163 Stock not restored: expected 47 but got 0
-[INFO ] 2026-06-21 22:04:32.995 [main] Test165_OrderSumThreshold - #165 Testing with product: iPad Mini 2021 Starlight (stock=47)
-[INFO ] 2026-06-21 22:04:34.410 [main] Test165_OrderSumThreshold - #165 Set quantity to: 47
-[INFO ] 2026-06-21 22:04:34.941 [main] Test165_OrderSumThreshold - #165 Current order sum: $23499.53
-[INFO ] 2026-06-21 22:04:36.791 [main] Test165_OrderSumThreshold - [PASS] #165 Error popup shown: Validation Errors
+[INFO ] 2026-06-21 23:34:53.419 [main] Test149_IllegalQuantityOrder - [PASS] #149 Error message mentions stock/quantity issue
+[INFO ] 2026-06-21 23:34:53.419 [main] Test149_IllegalQuantityOrder - [PASS] #149 Illegal quantity order test complete
+[INFO ] 2026-06-21 23:35:01.806 [main] Test150_ProductAmountOptions - #150 Testing with product: iPad Mini 2021 Starlight
+[INFO ] 2026-06-21 23:35:07.116 [main] Test150_ProductAmountOptions - #150 Initial summary rows: 1
+[INFO ] 2026-06-21 23:35:07.116 [main] Test150_ProductAmountOptions - [PASS] #150 Product added to summary
+[INFO ] 2026-06-21 23:35:07.146 [main] Test150_ProductAmountOptions - #150 Sum before +: 499.99
+[INFO ] 2026-06-21 23:35:12.464 [main] Test150_ProductAmountOptions - #150 Sum after +: 999.98
+[INFO ] 2026-06-21 23:35:12.464 [main] Test150_ProductAmountOptions - [PASS] #150 Plus button increased sum
+[INFO ] 2026-06-21 23:35:17.825 [main] Test150_ProductAmountOptions - #150 Sum after -: 499.99
+[INFO ] 2026-06-21 23:35:23.115 [main] Test150_ProductAmountOptions - [PASS] #150 Trash button removed product
+[INFO ] 2026-06-21 23:35:23.116 [main] Test150_ProductAmountOptions - [PASS] #150 Product amount options test complete
+[INFO ] 2026-06-21 23:35:27.587 [main] Test152_ReturnSingleOrder - #152 Ordering product to return later: iPad Mini 2021 Starlight
+[INFO ] 2026-06-21 23:35:34.727 [main] Test152_ReturnSingleOrder - #152 Confirm-order dialog shown, accepting
+[INFO ] 2026-06-21 23:35:36.025 [main] Test152_ReturnSingleOrder - #152 Order submitted and confirmed
+[INFO ] 2026-06-21 23:35:42.352 [main] Test152_ReturnSingleOrder - #152 Returns form available (order to return exists)
+[INFO ] 2026-06-21 23:35:42.478 [main] Test152_ReturnSingleOrder - #152 Selected product for return: iPad Mini 2021 Starlight
+[INFO ] 2026-06-21 23:35:43.071 [main] Test152_ReturnSingleOrder - #152 Set return quantity to 1
+[INFO ] 2026-06-21 23:35:44.856 [main] Test152_ReturnSingleOrder - #152 Submitted return request
+[WARN ] 2026-06-21 23:35:54.939 [main] Test152_ReturnSingleOrder - [WARN] #152 No clear success/error indicator after return submit
+[INFO ] 2026-06-21 23:35:54.939 [main] Test152_ReturnSingleOrder - #152 Re-opening returns dropdown to visually re-check the listed products
+[ERROR] 2026-06-21 23:35:56.998 [main] Test152_ReturnSingleOrder - [FAIL] #152 Product still in returns dropdown after full return — stock could be inflated
+[INFO ] 2026-06-21 23:36:00.501 [main] Test153_HomeNavigation - [PASS] #153 New Order -> Home
+[INFO ] 2026-06-21 23:36:01.511 [main] Test153_HomeNavigation - [PASS] #153 Order History -> Home
+[INFO ] 2026-06-21 23:36:02.453 [main] Test153_HomeNavigation - [PASS] #153 Returns -> Home
+[INFO ] 2026-06-21 23:36:02.453 [main] Test153_HomeNavigation - [PASS] #153 Home navigation - all entry points OK
+[INFO ] 2026-06-21 23:36:05.605 [main] Test154_NewOrderNavigation - [PASS] #154 Home -> New Order
+[INFO ] 2026-06-21 23:36:06.494 [main] Test154_NewOrderNavigation - [PASS] #154 Order History -> New Order
+[INFO ] 2026-06-21 23:36:07.353 [main] Test154_NewOrderNavigation - [PASS] #154 Returns -> New Order
+[INFO ] 2026-06-21 23:36:08.702 [main] Test154_NewOrderNavigation - [PASS] #154 Carousel -> New Order
+[INFO ] 2026-06-21 23:36:08.702 [main] Test154_NewOrderNavigation - [PASS] #154 New Order navigation - all entry points OK
+[INFO ] 2026-06-21 23:36:11.965 [main] Test155_OrderHistoryNavigation - [PASS] #155 Home -> Order History
+[INFO ] 2026-06-21 23:36:12.876 [main] Test155_OrderHistoryNavigation - [PASS] #155 New Order -> Order History
+[INFO ] 2026-06-21 23:36:13.767 [main] Test155_OrderHistoryNavigation - [PASS] #155 Returns -> Order History
+[INFO ] 2026-06-21 23:36:14.744 [main] Test155_OrderHistoryNavigation - [PASS] #155 Carousel -> Order History
+[INFO ] 2026-06-21 23:36:14.745 [main] Test155_OrderHistoryNavigation - [PASS] #155 Order History navigation - all entry points OK
+[INFO ] 2026-06-21 23:36:17.785 [main] Test156_ReturnsNavigation - [PASS] #156 Home -> Returns
+[INFO ] 2026-06-21 23:36:18.702 [main] Test156_ReturnsNavigation - [PASS] #156 New Order -> Returns
+[INFO ] 2026-06-21 23:36:19.570 [main] Test156_ReturnsNavigation - [PASS] #156 Order History -> Returns
+[INFO ] 2026-06-21 23:36:20.519 [main] Test156_ReturnsNavigation - [PASS] #156 Carousel -> Returns
+[INFO ] 2026-06-21 23:36:20.519 [main] Test156_ReturnsNavigation - [PASS] #156 Returns navigation - all entry points OK
+[INFO ] 2026-06-21 23:36:23.648 [main] Test156_ReturnsNavigation - [PASS] #156 Home -> Returns
+[ERROR] 2026-06-21 23:36:24.563 [main] Test156_ReturnsNavigation - [FAIL] #157 New Order -> Home (Logo): not on home screen
+[INFO ] 2026-06-21 23:36:29.127 [main] Test158_ReturnNonExistOrder - [PASS] #158 Returns page shows cold empty state (no orders to return)
+[INFO ] 2026-06-21 23:36:29.127 [main] Test158_ReturnNonExistOrder -        [DERIVED] Interpretation: Cannot return non-existent order because form is not rendered
+[WARN ] 2026-06-21 23:36:29.127 [main] Test158_ReturnNonExistOrder - **** #158 is a DERIVED test (no steps in PractiTest export) ****
+[WARN ] 2026-06-21 23:36:29.127 [main] Test158_ReturnNonExistOrder -      Confirm expected behavior with stakeholders
+[INFO ] 2026-06-21 23:36:29.127 [main] Test158_ReturnNonExistOrder - [PASS] #158 Return non-exist order test complete
+[INFO ] 2026-06-21 23:36:31.399 [main] Test161_ApiProductFetch - [PASS] #161 furniture -> 5 products, all descriptors present
+[INFO ] 2026-06-21 23:36:31.674 [main] Test161_ApiProductFetch - [PASS] #161 groceries -> 10 products, all descriptors present
+[INFO ] 2026-06-21 23:36:31.833 [main] Test161_ApiProductFetch - [PASS] #161 laptops -> 5 products, all descriptors present
+[INFO ] 2026-06-21 23:36:31.994 [main] Test161_ApiProductFetch - [PASS] #161 mobile-accessories -> 10 products, all descriptors present
+[INFO ] 2026-06-21 23:36:32.152 [main] Test161_ApiProductFetch - [PASS] #161 smartphones -> 10 products, all descriptors present
+[INFO ] 2026-06-21 23:36:32.387 [main] Test161_ApiProductFetch - [PASS] #161 sports-accessories -> 10 products, all descriptors present
+[INFO ] 2026-06-21 23:36:32.387 [main] Test161_ApiProductFetch - [PASS] #161 API product fetch — all categories OK
+[INFO ] 2026-06-21 23:36:37.589 [main] Test163_CancelOrder - #163 Testing with product: iPad Mini 2021 Starlight (original stock=47)
+[INFO ] 2026-06-21 23:36:40.839 [main] Test163_CancelOrder - #163 Validation error triggered as expected
+[INFO ] 2026-06-21 23:36:43.627 [main] Test163_CancelOrder - #163 Cancel button clicked
+[INFO ] 2026-06-21 23:36:43.650 [main] Test163_CancelOrder - #163 Stock after cancel: 0
+[ERROR] 2026-06-21 23:36:43.650 [main] Test163_CancelOrder - [FAIL] #163 Stock not restored: expected 47 but got 0
+[INFO ] 2026-06-21 23:36:49.153 [main] Test165_OrderSumThreshold - #165 Testing with product: iPad Mini 2021 Starlight (stock=47)
+[INFO ] 2026-06-21 23:36:50.548 [main] Test165_OrderSumThreshold - #165 Set quantity to: 47
+[INFO ] 2026-06-21 23:36:51.084 [main] Test165_OrderSumThreshold - #165 Current order sum: $23499.53
+[INFO ] 2026-06-21 23:36:52.949 [main] Test165_OrderSumThreshold - [PASS] #165 Error popup shown: Validation Errors
 Please fix the following issues:
 Total amount ($23499.53) exceeds the maximum allowed ($10000.00).
 Cancel Order
 Update Order
 Close
-[INFO ] 2026-06-21 22:04:36.791 [main] Test165_OrderSumThreshold - [PASS] #165 Error message mentions sum threshold issue
-[INFO ] 2026-06-21 22:04:36.791 [main] Test165_OrderSumThreshold - [PASS] #165 Only R2 fired (no R1 stock-violation reported)
-[INFO ] 2026-06-21 22:04:36.791 [main] Test165_OrderSumThreshold - [PASS] #165 Order sum threshold test complete
-[INFO ] 2026-06-21 22:04:40.298 [main] Test166_AddProductsToOrder - #166 Initial empty state: true
-[INFO ] 2026-06-21 22:04:47.711 [main] Test166_AddProductsToOrder - #166 Adding product 1: iPad Mini 2021 Starlight (card price: $0.0)
-[INFO ] 2026-06-21 22:04:49.054 [main] Test166_AddProductsToOrder - #166 After adding product 1: rows=1, sum=$499.99
-[INFO ] 2026-06-21 22:04:49.054 [main] Test166_AddProductsToOrder - #166 Inferred price1 from order sum: $499.99
-[INFO ] 2026-06-21 22:04:49.055 [main] Test166_AddProductsToOrder - [PASS] #166 First product added to summary
-[INFO ] 2026-06-21 22:04:56.346 [main] Test166_AddProductsToOrder - #166 Adding product 2: American Football (card price: $0.0)
-[INFO ] 2026-06-21 22:04:57.676 [main] Test166_AddProductsToOrder - #166 After adding product 2: rows=2, sum=$519.98
-[INFO ] 2026-06-21 22:04:57.677 [main] Test166_AddProductsToOrder - #166 Inferred price2 from sum difference: $19.99000000000001
-[INFO ] 2026-06-21 22:04:57.677 [main] Test166_AddProductsToOrder - [PASS] #166 Sum increased after adding second product
-[INFO ] 2026-06-21 22:04:57.677 [main] Test166_AddProductsToOrder - #166 Testing quantity increase with + button...
-[INFO ] 2026-06-21 22:04:59.812 [main] Test166_AddProductsToOrder - #166 After clicking + buttons: sum=$1039.96
-[INFO ] 2026-06-21 22:04:59.812 [main] Test166_AddProductsToOrder - [PASS] #166 Plus button worked - sum increased
-[INFO ] 2026-06-21 22:04:59.847 [main] Test166_AddProductsToOrder - #166 Expected sum: $1039.96 (product1: $499.99 x 2 + product2: $19.99000000000001 x 2)
-[INFO ] 2026-06-21 22:04:59.847 [main] Test166_AddProductsToOrder - #166 Actual sum:   $1039.96
-[INFO ] 2026-06-21 22:04:59.848 [main] Test166_AddProductsToOrder - [PASS] #166 Order sum matches expected: $1039.96
-[INFO ] 2026-06-21 22:04:59.848 [main] Test166_AddProductsToOrder - [PASS] #166 Add products to order test complete
-[INFO ] 2026-06-21 22:05:04.381 [main] Test168_OrderHistoryPresentationCold - #168 Order History page loaded
-[INFO ] 2026-06-21 22:05:04.391 [main] Test168_OrderHistoryPresentationCold - [PASS] #168 Empty state displayed correctly
-[INFO ] 2026-06-21 22:05:04.422 [main] Test168_OrderHistoryPresentationCold - #168 Subtitle: 0 orders this session
-[INFO ] 2026-06-21 22:05:04.422 [main] Test168_OrderHistoryPresentationCold - [PASS] #168 Subtitle indicates 0 orders
-[INFO ] 2026-06-21 22:05:09.429 [main] Test168_OrderHistoryPresentationCold - #168 Order rows count: 0
-[INFO ] 2026-06-21 22:05:09.430 [main] Test168_OrderHistoryPresentationCold - [PASS] #168 No order rows in cold state
-[INFO ] 2026-06-21 22:05:09.430 [main] Test168_OrderHistoryPresentationCold - [PASS] #168 Order History presentation (cold) test complete
-[INFO ] 2026-06-21 22:05:15.010 [main] Test169_NoFurnitureGroceries - #169 Adding furniture product: Bedside Table African Cherry
-[INFO ] 2026-06-21 22:05:21.372 [main] Test169_NoFurnitureGroceries - #169 Furniture item added to order
-[INFO ] 2026-06-21 22:05:23.481 [main] Test169_NoFurnitureGroceries - #169 Adding grocery product: Apple
-[INFO ] 2026-06-21 22:05:24.848 [main] Test169_NoFurnitureGroceries - #169 Order sum with both items: $301.98
-[INFO ] 2026-06-21 22:05:26.713 [main] Test169_NoFurnitureGroceries - [PASS] #169 Error popup shown: Validation Errors
+[INFO ] 2026-06-21 23:36:52.949 [main] Test165_OrderSumThreshold - [PASS] #165 Error message mentions sum threshold issue
+[INFO ] 2026-06-21 23:36:52.949 [main] Test165_OrderSumThreshold - [PASS] #165 Only R2 fired (no R1 stock-violation reported)
+[INFO ] 2026-06-21 23:36:52.949 [main] Test165_OrderSumThreshold - [PASS] #165 Order sum threshold test complete
+[INFO ] 2026-06-21 23:36:56.118 [main] Test166_AddProductsToOrder - #166 Initial empty state: true
+[INFO ] 2026-06-21 23:37:03.410 [main] Test166_AddProductsToOrder - #166 Adding product 1: iPad Mini 2021 Starlight (card price: $0.0)
+[INFO ] 2026-06-21 23:37:04.742 [main] Test166_AddProductsToOrder - #166 After adding product 1: rows=1, sum=$499.99
+[INFO ] 2026-06-21 23:37:04.742 [main] Test166_AddProductsToOrder - #166 Inferred price1 from order sum: $499.99
+[INFO ] 2026-06-21 23:37:04.742 [main] Test166_AddProductsToOrder - [PASS] #166 First product added to summary
+[INFO ] 2026-06-21 23:37:11.951 [main] Test166_AddProductsToOrder - #166 Adding product 2: American Football (card price: $0.0)
+[INFO ] 2026-06-21 23:37:13.272 [main] Test166_AddProductsToOrder - #166 After adding product 2: rows=2, sum=$519.98
+[INFO ] 2026-06-21 23:37:13.272 [main] Test166_AddProductsToOrder - #166 Inferred price2 from sum difference: $19.99000000000001
+[INFO ] 2026-06-21 23:37:13.272 [main] Test166_AddProductsToOrder - [PASS] #166 Sum increased after adding second product
+[INFO ] 2026-06-21 23:37:13.273 [main] Test166_AddProductsToOrder - #166 Testing quantity increase with + button...
+[INFO ] 2026-06-21 23:37:15.379 [main] Test166_AddProductsToOrder - #166 After clicking + buttons: sum=$1039.96
+[INFO ] 2026-06-21 23:37:15.379 [main] Test166_AddProductsToOrder - [PASS] #166 Plus button worked - sum increased
+[INFO ] 2026-06-21 23:37:15.406 [main] Test166_AddProductsToOrder - #166 Expected sum: $1039.96 (product1: $499.99 x 2 + product2: $19.99000000000001 x 2)
+[INFO ] 2026-06-21 23:37:15.406 [main] Test166_AddProductsToOrder - #166 Actual sum:   $1039.96
+[INFO ] 2026-06-21 23:37:15.406 [main] Test166_AddProductsToOrder - [PASS] #166 Order sum matches expected: $1039.96
+[INFO ] 2026-06-21 23:37:15.407 [main] Test166_AddProductsToOrder - [PASS] #166 Add products to order test complete
+[INFO ] 2026-06-21 23:37:19.861 [main] Test168_OrderHistoryPresentationCold - #168 Order History page loaded
+[INFO ] 2026-06-21 23:37:19.870 [main] Test168_OrderHistoryPresentationCold - [PASS] #168 Empty state displayed correctly
+[INFO ] 2026-06-21 23:37:19.900 [main] Test168_OrderHistoryPresentationCold - #168 Subtitle: 0 orders this session
+[INFO ] 2026-06-21 23:37:19.900 [main] Test168_OrderHistoryPresentationCold - [PASS] #168 Subtitle indicates 0 orders
+[INFO ] 2026-06-21 23:37:24.920 [main] Test168_OrderHistoryPresentationCold - #168 Order rows count: 0
+[INFO ] 2026-06-21 23:37:24.920 [main] Test168_OrderHistoryPresentationCold - [PASS] #168 No order rows in cold state
+[INFO ] 2026-06-21 23:37:24.920 [main] Test168_OrderHistoryPresentationCold - [PASS] #168 Order History presentation (cold) test complete
+[INFO ] 2026-06-21 23:37:30.272 [main] Test169_NoFurnitureGroceries - #169 Adding furniture product: Bedside Table African Cherry
+[INFO ] 2026-06-21 23:37:36.619 [main] Test169_NoFurnitureGroceries - #169 Furniture item added to order
+[INFO ] 2026-06-21 23:37:38.723 [main] Test169_NoFurnitureGroceries - #169 Adding grocery product: Apple
+[INFO ] 2026-06-21 23:37:40.082 [main] Test169_NoFurnitureGroceries - #169 Order sum with both items: $301.98
+[INFO ] 2026-06-21 23:37:41.969 [main] Test169_NoFurnitureGroceries - [PASS] #169 Error popup shown: Validation Errors
 Please fix the following issues:
 Products from "furniture" and "groceries" cannot be ordered together.
 Cancel Order
 Update Order
 Close
-[INFO ] 2026-06-21 22:05:26.713 [main] Test169_NoFurnitureGroceries - [PASS] #169 Error message mentions category mixing issue
-[INFO ] 2026-06-21 22:05:26.713 [main] Test169_NoFurnitureGroceries - [PASS] #169 No furniture + groceries mix test complete
-[INFO ] 2026-06-21 22:05:31.249 [main] Test170_OrderHistoryExportCold - #170 Confirmed cold state (empty history)
-[INFO ] 2026-06-21 22:05:36.264 [main] Test170_OrderHistoryExportCold - [PASS] #170 No export button in cold state (correct behavior)
-[INFO ] 2026-06-21 22:05:36.265 [main] Test170_OrderHistoryExportCold - [PASS] #170 Order History export (cold) test complete
-[INFO ] 2026-06-21 22:05:41.678 [main] Test171_SubmitGoodOrder - #171 Ordering product: iPad Mini 2021 Starlight
-[INFO ] 2026-06-21 22:05:48.033 [main] Test171_SubmitGoodOrder - #171 Product added to order summary
-[INFO ] 2026-06-21 22:05:48.033 [main] Test171_SubmitGoodOrder - #171 Submitting order...
-[INFO ] 2026-06-21 22:06:07.570 [main] Test171_SubmitGoodOrder - [PASS] #171 Order appears in history
-[INFO ] 2026-06-21 22:06:07.581 [main] Test171_SubmitGoodOrder - [PASS] #171 Product 'iPad Mini 2021 Starlight' found in order history
-[INFO ] 2026-06-21 22:06:07.609 [main] Test171_SubmitGoodOrder - #171 History subtitle: 1 order this session
-[INFO ] 2026-06-21 22:06:07.610 [main] Test171_SubmitGoodOrder - [PASS] #171 Submit good order test complete
-[INFO ] 2026-06-21 22:06:13.359 [main] Test174_OrderHistoryExportHot - #174 Ordering product: iPad Mini 2021 Starlight
-[INFO ] 2026-06-21 22:06:14.659 [main] Test174_OrderHistoryExportHot - #174 Submitting order...
-[INFO ] 2026-06-21 22:06:25.654 [main] Test174_OrderHistoryExportHot - [PASS] #174 Export button (btn-export-csv) found in Order History
-[INFO ] 2026-06-21 22:06:25.654 [main] Test174_OrderHistoryExportHot - [PASS] #174 Order History export button test complete
-[INFO ] 2026-06-21 22:06:27.839 [main] Test175_ProductTextSearch - #175 Match term: phone, No-match term: zzqqxx_no_such_product_123
-[INFO ] 2026-06-21 22:06:31.354 [main] Test175_ProductTextSearch - #175 Initial product count: 10
-[INFO ] 2026-06-21 22:06:32.993 [main] Test175_ProductTextSearch - #175 Products after searching 'phone': 10
-[INFO ] 2026-06-21 22:06:32.993 [main] Test175_ProductTextSearch - [PASS] #175 Search 'phone' returned 10 products
-[INFO ] 2026-06-21 22:06:34.085 [main] Test175_ProductTextSearch - #175 Products after clearing search: 10
-[INFO ] 2026-06-21 22:06:40.715 [main] Test175_ProductTextSearch - #175 Products after searching 'zzqqxx_no_such_product_123': 0
-[INFO ] 2026-06-21 22:06:40.716 [main] Test175_ProductTextSearch - [PASS] #175 No-match search correctly shows no products
-[INFO ] 2026-06-21 22:06:40.716 [main] Test175_ProductTextSearch - [PASS] #175 Product text search test complete
-[INFO ] 2026-06-21 22:06:46.263 [main] Test176_PriceRangeFilter - #176 Initial product count: 3
-[INFO ] 2026-06-21 22:06:46.274 [main] Test176_PriceRangeFilter - #176 Found price slider element
-[INFO ] 2026-06-21 22:06:46.285 [main] Test176_PriceRangeFilter - #176 Slider width: 1017px
-[INFO ] 2026-06-21 22:06:53.140 [main] Test176_PriceRangeFilter - #176 Products after mid-range filter: 0
-[INFO ] 2026-06-21 22:06:53.140 [main] Test176_PriceRangeFilter - [PASS] #176 Price filter reduced/maintained product count
-[INFO ] 2026-06-21 22:07:00.039 [main] Test176_PriceRangeFilter - #176 Products after min-range filter: 0
-[INFO ] 2026-06-21 22:07:00.040 [main] Test176_PriceRangeFilter - [PASS] #176 Price range filter test complete
-[INFO ] 2026-06-21 22:07:06.402 [main] Test177_InStockOnlyFilter - #177 Added Apple AirPower Wireless Charger to cart
-[INFO ] 2026-06-21 22:07:08.568 [main] Test177_InStockOnlyFilter - #177 Initial product count (all): 10
-[INFO ] 2026-06-21 22:07:10.361 [main] Test177_InStockOnlyFilter - #177 Toggled 'In stock only' filter
-[INFO ] 2026-06-21 22:07:10.369 [main] Test177_InStockOnlyFilter - #177 Products after 'In stock only': 9
-[INFO ] 2026-06-21 22:07:10.369 [main] Test177_InStockOnlyFilter - [PASS] #177 In-stock filter applied (count: 9 < 10)
-[INFO ] 2026-06-21 22:07:12.157 [main] Test177_InStockOnlyFilter - #177 Products after toggling off: 10
-[INFO ] 2026-06-21 22:07:12.157 [main] Test177_InStockOnlyFilter - [PASS] #177 Filter toggled off successfully
-[INFO ] 2026-06-21 22:07:12.157 [main] Test177_InStockOnlyFilter - [PASS] #177 In-stock only filter test complete
-[INFO ] 2026-06-21 22:07:15.423 [main] Test178_DescriptionViewing - #178 Featured products section present
-[INFO ] 2026-06-21 22:07:15.467 [main] Test178_DescriptionViewing - #178 Initial card 1 text length: 55
-[INFO ] 2026-06-21 22:07:16.287 [main] Test178_DescriptionViewing - #178 Toggled description for card 1
-[INFO ] 2026-06-21 22:07:16.311 [main] Test178_DescriptionViewing - #178 Card 1 text after toggle length: 230
-[INFO ] 2026-06-21 22:07:16.311 [main] Test178_DescriptionViewing - [PASS] #178 Description toggle changed card content
-[INFO ] 2026-06-21 22:07:17.136 [main] Test178_DescriptionViewing - #178 Card 1 text after second toggle length: 55
-[INFO ] 2026-06-21 22:07:17.136 [main] Test178_DescriptionViewing - [PASS] #178 Description toggled back
-[INFO ] 2026-06-21 22:07:17.955 [main] Test178_DescriptionViewing - #178 Toggled description for card 2
-[INFO ] 2026-06-21 22:07:18.732 [main] Test178_DescriptionViewing - [PASS] #178 Card 2 description toggle works
-[INFO ] 2026-06-21 22:07:19.669 [main] Test178_DescriptionViewing - Before toggle length: 68
-[INFO ] 2026-06-21 22:07:20.515 [main] Test178_DescriptionViewing - After toggle length: 230
-[INFO ] 2026-06-21 22:07:21.322 [main] Test178_DescriptionViewing - After second toggle length: 68
-[INFO ] 2026-06-21 22:07:21.322 [main] Test178_DescriptionViewing - [PASS] #178 checks passed
-[INFO ] 2026-06-21 22:07:27.779 [main] Test179_OrderApproval - #179 Ordering product: iPad Mini 2021 Starlight
-[INFO ] 2026-06-21 22:07:29.103 [main] Test179_OrderApproval - #179 Order sum: $499.99
-[INFO ] 2026-06-21 22:07:36.426 [main] Test179_OrderApproval - #179 Confirm-order dialog shown, accepting
-[INFO ] 2026-06-21 22:07:45.620 [main] Test179_OrderApproval - [PASS] #179 Order appears in history
-[INFO ] 2026-06-21 22:07:45.631 [main] Test179_OrderApproval - [PASS] #179 Product 'iPad Mini 2021 Starlight' found in order history
-[INFO ] 2026-06-21 22:07:45.656 [main] Test179_OrderApproval - #179 History subtitle: 1 order this session
-[INFO ] 2026-06-21 22:07:45.656 [main] Test179_OrderApproval - [PASS] #179 Order count reflected in subtitle
-[INFO ] 2026-06-21 22:07:50.663 [main] Test179_OrderApproval - #179 Order rows: 0
-[INFO ] 2026-06-21 22:07:50.663 [main] Test179_OrderApproval - [PASS] #179 Order Approval test complete
-[INFO ] 2026-06-21 22:07:56.270 [main] Test180_DataPersistence - #180 Ordering product: iPad Mini 2021 Starlight
-[INFO ] 2026-06-21 22:07:57.572 [main] Test180_DataPersistence - #180 Submitting order...
-[INFO ] 2026-06-21 22:08:08.650 [main] Test180_DataPersistence - #180 Export button before refresh: true
-[INFO ] 2026-06-21 22:08:08.651 [main] Test180_DataPersistence - #180 Refreshing page...
-[INFO ] 2026-06-21 22:08:16.117 [main] Test180_DataPersistence - [PASS] #180 No export button after refresh (data cleared - cold state)
-[INFO ] 2026-06-21 22:08:16.117 [main] Test180_DataPersistence - [PASS] #180 Data Persistence test complete
+[INFO ] 2026-06-21 23:37:41.969 [main] Test169_NoFurnitureGroceries - [PASS] #169 Error message mentions category mixing issue
+[INFO ] 2026-06-21 23:37:41.969 [main] Test169_NoFurnitureGroceries - [PASS] #169 No furniture + groceries mix test complete
+[INFO ] 2026-06-21 23:37:46.261 [main] Test170_OrderHistoryExportCold - #170 Confirmed cold state (empty history)
+[INFO ] 2026-06-21 23:37:51.292 [main] Test170_OrderHistoryExportCold - [PASS] #170 No export button in cold state (correct behavior)
+[INFO ] 2026-06-21 23:37:51.292 [main] Test170_OrderHistoryExportCold - [PASS] #170 Order History export (cold) test complete
+[INFO ] 2026-06-21 23:37:58.758 [main] Test171_SubmitGoodOrder - #171 Ordering product: iPad Mini 2021 Starlight
+[INFO ] 2026-06-21 23:38:05.099 [main] Test171_SubmitGoodOrder - #171 Product added to order summary
+[INFO ] 2026-06-21 23:38:05.099 [main] Test171_SubmitGoodOrder - #171 Submitting order...
+[INFO ] 2026-06-21 23:38:24.638 [main] Test171_SubmitGoodOrder - [PASS] #171 Order appears in history
+[INFO ] 2026-06-21 23:38:24.648 [main] Test171_SubmitGoodOrder - [PASS] #171 Product 'iPad Mini 2021 Starlight' found in order history
+[INFO ] 2026-06-21 23:38:24.672 [main] Test171_SubmitGoodOrder - #171 History subtitle: 1 order this session
+[INFO ] 2026-06-21 23:38:24.672 [main] Test171_SubmitGoodOrder - [PASS] #171 Submit good order test complete
+[INFO ] 2026-06-21 23:38:29.952 [main] Test174_OrderHistoryExportHot - #174 Ordering product: iPad Mini 2021 Starlight
+[INFO ] 2026-06-21 23:38:31.242 [main] Test174_OrderHistoryExportHot - #174 Submitting order...
+[INFO ] 2026-06-21 23:38:42.222 [main] Test174_OrderHistoryExportHot - [PASS] #174 Export button (btn-export-csv) found in Order History
+[INFO ] 2026-06-21 23:38:42.222 [main] Test174_OrderHistoryExportHot - [PASS] #174 Order History export button test complete
+[INFO ] 2026-06-21 23:38:44.291 [main] Test175_ProductTextSearch - #175 Match term: phone, No-match term: zzqqxx_no_such_product_123
+[INFO ] 2026-06-21 23:38:47.660 [main] Test175_ProductTextSearch - #175 Initial product count: 10
+[INFO ] 2026-06-21 23:38:49.294 [main] Test175_ProductTextSearch - #175 Products after searching 'phone': 10
+[INFO ] 2026-06-21 23:38:49.294 [main] Test175_ProductTextSearch - [PASS] #175 Search 'phone' returned 10 products
+[INFO ] 2026-06-21 23:38:50.380 [main] Test175_ProductTextSearch - #175 Products after clearing search: 10
+[INFO ] 2026-06-21 23:38:57.025 [main] Test175_ProductTextSearch - #175 Products after searching 'zzqqxx_no_such_product_123': 0
+[INFO ] 2026-06-21 23:38:57.025 [main] Test175_ProductTextSearch - [PASS] #175 No-match search correctly shows no products
+[INFO ] 2026-06-21 23:38:57.025 [main] Test175_ProductTextSearch - [PASS] #175 Product text search test complete
+[INFO ] 2026-06-21 23:39:03.346 [main] Test176_PriceRangeFilter - #176 Initial product count: 3
+[INFO ] 2026-06-21 23:39:03.357 [main] Test176_PriceRangeFilter - #176 Found price slider element
+[INFO ] 2026-06-21 23:39:03.368 [main] Test176_PriceRangeFilter - #176 Slider width: 1017px
+[INFO ] 2026-06-21 23:39:10.244 [main] Test176_PriceRangeFilter - #176 Products after mid-range filter: 0
+[INFO ] 2026-06-21 23:39:10.244 [main] Test176_PriceRangeFilter - [PASS] #176 Price filter reduced/maintained product count
+[INFO ] 2026-06-21 23:39:17.149 [main] Test176_PriceRangeFilter - #176 Products after min-range filter: 0
+[INFO ] 2026-06-21 23:39:17.149 [main] Test176_PriceRangeFilter - [PASS] #176 Price range filter test complete
+[INFO ] 2026-06-21 23:39:23.537 [main] Test177_InStockOnlyFilter - #177 Added Apple AirPower Wireless Charger to cart
+[INFO ] 2026-06-21 23:39:25.649 [main] Test177_InStockOnlyFilter - #177 Initial product count (all): 10
+[INFO ] 2026-06-21 23:39:27.442 [main] Test177_InStockOnlyFilter - #177 Toggled 'In stock only' filter
+[INFO ] 2026-06-21 23:39:27.454 [main] Test177_InStockOnlyFilter - #177 Products after 'In stock only': 9
+[INFO ] 2026-06-21 23:39:27.454 [main] Test177_InStockOnlyFilter - [PASS] #177 In-stock filter applied (count: 9 < 10)
+[INFO ] 2026-06-21 23:39:29.256 [main] Test177_InStockOnlyFilter - #177 Products after toggling off: 10
+[INFO ] 2026-06-21 23:39:29.256 [main] Test177_InStockOnlyFilter - [PASS] #177 Filter toggled off successfully
+[INFO ] 2026-06-21 23:39:29.256 [main] Test177_InStockOnlyFilter - [PASS] #177 In-stock only filter test complete
+[INFO ] 2026-06-21 23:39:32.206 [main] Test178_DescriptionViewing - #178 Featured products section present
+[INFO ] 2026-06-21 23:39:32.248 [main] Test178_DescriptionViewing - #178 Initial card 1 text length: 55
+[INFO ] 2026-06-21 23:39:33.056 [main] Test178_DescriptionViewing - #178 Toggled description for card 1
+[INFO ] 2026-06-21 23:39:33.078 [main] Test178_DescriptionViewing - #178 Card 1 text after toggle length: 230
+[INFO ] 2026-06-21 23:39:33.080 [main] Test178_DescriptionViewing - [PASS] #178 Description toggle changed card content
+[INFO ] 2026-06-21 23:39:33.924 [main] Test178_DescriptionViewing - #178 Card 1 text after second toggle length: 55
+[INFO ] 2026-06-21 23:39:33.924 [main] Test178_DescriptionViewing - [PASS] #178 Description toggled back
+[INFO ] 2026-06-21 23:39:34.727 [main] Test178_DescriptionViewing - #178 Toggled description for card 2
+[INFO ] 2026-06-21 23:39:35.777 [main] Test178_DescriptionViewing - [PASS] #178 Card 2 description toggle works
+[INFO ] 2026-06-21 23:39:36.662 [main] Test178_DescriptionViewing - Before toggle length: 68
+[INFO ] 2026-06-21 23:39:37.478 [main] Test178_DescriptionViewing - After toggle length: 230
+[INFO ] 2026-06-21 23:39:38.276 [main] Test178_DescriptionViewing - After second toggle length: 68
+[INFO ] 2026-06-21 23:39:38.276 [main] Test178_DescriptionViewing - [PASS] #178 checks passed
+[INFO ] 2026-06-21 23:39:44.664 [main] Test179_OrderApproval - #179 Ordering product: iPad Mini 2021 Starlight
+[INFO ] 2026-06-21 23:39:45.984 [main] Test179_OrderApproval - #179 Order sum: $499.99
+[INFO ] 2026-06-21 23:39:53.362 [main] Test179_OrderApproval - #179 Confirm-order dialog shown, accepting
+[INFO ] 2026-06-21 23:40:02.540 [main] Test179_OrderApproval - [PASS] #179 Order appears in history
+[INFO ] 2026-06-21 23:40:02.549 [main] Test179_OrderApproval - [PASS] #179 Product 'iPad Mini 2021 Starlight' found in order history
+[INFO ] 2026-06-21 23:40:02.571 [main] Test179_OrderApproval - #179 History subtitle: 1 order this session
+[INFO ] 2026-06-21 23:40:02.572 [main] Test179_OrderApproval - [PASS] #179 Order count reflected in subtitle
+[INFO ] 2026-06-21 23:40:07.636 [main] Test179_OrderApproval - #179 Order rows: 0
+[INFO ] 2026-06-21 23:40:07.637 [main] Test179_OrderApproval - [PASS] #179 Order Approval test complete
+[INFO ] 2026-06-21 23:40:13.206 [main] Test180_DataPersistence - #180 Ordering product: iPad Mini 2021 Starlight
+[INFO ] 2026-06-21 23:40:14.503 [main] Test180_DataPersistence - #180 Submitting order...
+[INFO ] 2026-06-21 23:40:25.507 [main] Test180_DataPersistence - #180 Export button before refresh: true
+[INFO ] 2026-06-21 23:40:25.507 [main] Test180_DataPersistence - #180 Refreshing page...
+[INFO ] 2026-06-21 23:40:32.969 [main] Test180_DataPersistence - [PASS] #180 No export button after refresh (data cleared - cold state)
+[INFO ] 2026-06-21 23:40:32.970 [main] Test180_DataPersistence - [PASS] #180 Data Persistence test complete
