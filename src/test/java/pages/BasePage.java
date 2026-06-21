@@ -4,6 +4,7 @@ import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -35,7 +36,16 @@ public class BasePage {
     }
 
     protected void click(By by) {
-        waitClickable(by).click();
+        WebElement el = waitClickable(by);
+        // Scroll into view to avoid toast/overlay interception
+        ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView({block: 'center'});", el);
+        try {
+            Thread.sleep(200); // Brief pause for any animations
+            el.click();
+        } catch (Exception e) {
+            // Fallback to JS click if element is still intercepted
+            ((JavascriptExecutor) driver).executeScript("arguments[0].click();", el);
+        }
     }
 
     protected void type(By by, String text) {

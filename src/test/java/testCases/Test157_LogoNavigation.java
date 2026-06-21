@@ -5,7 +5,7 @@ import org.apache.logging.log4j.Logger;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.JUnitCore;
-import org.junit.runner.notification.TextListener;
+import org.junit.internal.TextListener;
 
 /**
  * PractiTest Test #157 — Logo navigation.

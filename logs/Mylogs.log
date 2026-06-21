@@ -5,3 +5,359 @@
 [INFO ] 2026-06-17 00:18:27.492 [main] Test161_ApiProductFetch - [PASS] #161 smartphones -> 10 products, all descriptors present
 [INFO ] 2026-06-17 00:18:27.687 [main] Test161_ApiProductFetch - [PASS] #161 sports-accessories -> 10 products, all descriptors present
 [INFO ] 2026-06-17 00:18:27.688 [main] Test161_ApiProductFetch - [PASS] #161 API product fetch — all categories OK
+[INFO ] 2026-06-18 19:28:57.100 [main] Test161_ApiProductFetch - [PASS] #161 furniture -> 5 products, all descriptors present
+[INFO ] 2026-06-18 19:28:57.612 [main] Test161_ApiProductFetch - [PASS] #161 groceries -> 10 products, all descriptors present
+[INFO ] 2026-06-18 19:28:57.768 [main] Test161_ApiProductFetch - [PASS] #161 laptops -> 5 products, all descriptors present
+[INFO ] 2026-06-18 19:28:57.949 [main] Test161_ApiProductFetch - [PASS] #161 mobile-accessories -> 10 products, all descriptors present
+[INFO ] 2026-06-18 19:28:58.121 [main] Test161_ApiProductFetch - [PASS] #161 smartphones -> 10 products, all descriptors present
+[INFO ] 2026-06-18 19:28:58.319 [main] Test161_ApiProductFetch - [PASS] #161 sports-accessories -> 10 products, all descriptors present
+[INFO ] 2026-06-18 19:28:58.320 [main] Test161_ApiProductFetch - [PASS] #161 API product fetch — all categories OK
+[INFO ] 2026-06-18 19:41:47.218 [main] Test153_HomeNavigation - [PASS] #153 New Order -> Home
+[INFO ] 2026-06-18 19:41:48.071 [main] Test153_HomeNavigation - [PASS] #153 Order History -> Home
+[INFO ] 2026-06-18 19:41:48.875 [main] Test153_HomeNavigation - [PASS] #153 Returns -> Home
+[INFO ] 2026-06-18 19:41:48.875 [main] Test153_HomeNavigation - [PASS] #153 Home navigation - all entry points OK
+[INFO ] 2026-06-18 19:42:04.437 [main] Test154_NewOrderNavigation - [PASS] #154 Home -> New Order
+[INFO ] 2026-06-18 19:42:05.177 [main] Test154_NewOrderNavigation - [PASS] #154 Order History -> New Order
+[INFO ] 2026-06-18 19:42:05.824 [main] Test154_NewOrderNavigation - [PASS] #154 Returns -> New Order
+[INFO ] 2026-06-18 19:42:06.504 [main] Test154_NewOrderNavigation - [PASS] #154 Carousel -> New Order
+[INFO ] 2026-06-18 19:42:06.504 [main] Test154_NewOrderNavigation - [PASS] #154 New Order navigation - all entry points OK
+[INFO ] 2026-06-18 19:42:20.810 [main] Test142_CategorySelectionCold - [PASS] #142 Cold state: empty products state shown
+[INFO ] 2026-06-18 19:42:20.986 [main] Test142_CategorySelectionCold - #142 Selected category: laptops
+[INFO ] 2026-06-18 19:42:28.057 [main] Test142_CategorySelectionCold - [PASS] #142 Category selection cold: products loaded (count=3)
+[INFO ] 2026-06-18 19:42:28.058 [main] Test142_CategorySelectionCold - [PASS] #142 Category selection (cold) complete
+[INFO ] 2026-06-18 19:42:45.414 [main] Test171_SubmitGoodOrder - #171 Ordering product: iPad Mini 2021 Starlight
+[INFO ] 2026-06-18 19:42:51.557 [main] Test171_SubmitGoodOrder - #171 Product added to order summary
+[INFO ] 2026-06-18 19:43:31.162 [main] Test171_SubmitGoodOrder - #171 Ordering product: iPad Mini 2021 Starlight
+[INFO ] 2026-06-18 19:43:37.300 [main] Test171_SubmitGoodOrder - #171 Product added to order summary
+[INFO ] 2026-06-18 19:43:37.375 [main] Test171_SubmitGoodOrder - #171 Order sum: $6.000600202149999E49
+[INFO ] 2026-06-18 19:44:20.305 [main] Test171_SubmitGoodOrder - #171 Ordering product: iPad Mini 2021 Starlight
+[INFO ] 2026-06-18 19:44:26.443 [main] Test171_SubmitGoodOrder - #171 Product added to order summary
+[INFO ] 2026-06-18 19:44:26.444 [main] Test171_SubmitGoodOrder - #171 Submitting order...
+[INFO ] 2026-06-18 19:45:07.520 [main] Test171_SubmitGoodOrder - #171 Ordering product: iPad Mini 2021 Starlight
+[INFO ] 2026-06-18 19:45:13.901 [main] Test171_SubmitGoodOrder - #171 Product added to order summary
+[INFO ] 2026-06-18 19:45:13.901 [main] Test171_SubmitGoodOrder - #171 Submitting order...
+[ERROR] 2026-06-18 19:45:16.319 [main] Test171_SubmitGoodOrder - [FAIL] #171 Unexpected error on submit: Confirm Order
+Your order is ready to be placed.
+Cancel Order
+Update Order
+Confirm Order
+Close
+[INFO ] 2026-06-18 19:46:04.928 [main] Test171_SubmitGoodOrder - #171 Ordering product: iPad Mini 2021 Starlight
+[INFO ] 2026-06-18 19:46:11.326 [main] Test171_SubmitGoodOrder - #171 Product added to order summary
+[INFO ] 2026-06-18 19:46:11.327 [main] Test171_SubmitGoodOrder - #171 Submitting order...
+[ERROR] 2026-06-18 19:46:27.175 [main] Test171_SubmitGoodOrder - [FAIL] #171 Order not found in history
+[INFO ] 2026-06-18 19:47:11.554 [main] Test171_SubmitGoodOrder - #171 Ordering product: iPad Mini 2021 Starlight
+[INFO ] 2026-06-18 19:47:17.928 [main] Test171_SubmitGoodOrder - #171 Product added to order summary
+[INFO ] 2026-06-18 19:47:17.929 [main] Test171_SubmitGoodOrder - #171 Submitting order...
+[INFO ] 2026-06-18 19:47:34.053 [main] Test171_SubmitGoodOrder - [PASS] #171 Order appears in history
+[INFO ] 2026-06-18 19:47:34.073 [main] Test171_SubmitGoodOrder - [PASS] #171 Product 'iPad Mini 2021 Starlight' found in order history
+[INFO ] 2026-06-18 19:48:21.646 [main] Test171_SubmitGoodOrder - #171 Ordering product: iPad Mini 2021 Starlight
+[INFO ] 2026-06-18 19:48:28.043 [main] Test171_SubmitGoodOrder - #171 Product added to order summary
+[INFO ] 2026-06-18 19:48:28.044 [main] Test171_SubmitGoodOrder - #171 Submitting order...
+[INFO ] 2026-06-18 19:48:45.780 [main] Test171_SubmitGoodOrder - [PASS] #171 Order appears in history
+[INFO ] 2026-06-18 19:48:45.797 [main] Test171_SubmitGoodOrder - [PASS] #171 Product 'iPad Mini 2021 Starlight' found in order history
+[INFO ] 2026-06-18 19:49:01.963 [main] Test171_SubmitGoodOrder - #171 Subtitle element not found (OK - order still verified)
+[INFO ] 2026-06-18 19:49:01.964 [main] Test171_SubmitGoodOrder - [PASS] #171 Submit good order test complete
+[INFO ] 2026-06-18 19:49:18.500 [main] Test155_OrderHistoryNavigation - [PASS] #155 Home -> Order History
+[INFO ] 2026-06-18 19:49:19.445 [main] Test155_OrderHistoryNavigation - [PASS] #155 New Order -> Order History
+[INFO ] 2026-06-18 19:49:20.418 [main] Test155_OrderHistoryNavigation - [PASS] #155 Returns -> Order History
+[INFO ] 2026-06-18 19:49:21.430 [main] Test155_OrderHistoryNavigation - [PASS] #155 Carousel -> Order History
+[INFO ] 2026-06-18 19:49:21.431 [main] Test155_OrderHistoryNavigation - [PASS] #155 Order History navigation - all entry points OK
+[INFO ] 2026-06-18 19:49:23.718 [main] Test154_NewOrderNavigation - [PASS] #154 Home -> New Order
+[INFO ] 2026-06-18 19:49:24.649 [main] Test154_NewOrderNavigation - [PASS] #154 Order History -> New Order
+[INFO ] 2026-06-18 19:49:25.638 [main] Test154_NewOrderNavigation - [PASS] #154 Returns -> New Order
+[INFO ] 2026-06-18 19:49:26.564 [main] Test154_NewOrderNavigation - [PASS] #154 Carousel -> New Order
+[INFO ] 2026-06-18 19:49:26.565 [main] Test154_NewOrderNavigation - [PASS] #154 New Order navigation - all entry points OK
+[INFO ] 2026-06-18 19:49:29.019 [main] Test153_HomeNavigation - [PASS] #153 New Order -> Home
+[INFO ] 2026-06-18 19:49:29.950 [main] Test153_HomeNavigation - [PASS] #153 Order History -> Home
+[INFO ] 2026-06-18 19:49:30.901 [main] Test153_HomeNavigation - [PASS] #153 Returns -> Home
+[INFO ] 2026-06-18 19:49:30.901 [main] Test153_HomeNavigation - [PASS] #153 Home navigation - all entry points OK
+[INFO ] 2026-06-18 19:49:33.284 [main] Test156_ReturnsNavigation - [PASS] #156 Home -> Returns
+[INFO ] 2026-06-18 19:49:34.251 [main] Test156_ReturnsNavigation - [PASS] #156 New Order -> Returns
+[INFO ] 2026-06-18 19:49:35.200 [main] Test156_ReturnsNavigation - [PASS] #156 Order History -> Returns
+[INFO ] 2026-06-18 19:49:36.196 [main] Test156_ReturnsNavigation - [PASS] #156 Carousel -> Returns
+[INFO ] 2026-06-18 19:49:36.196 [main] Test156_ReturnsNavigation - [PASS] #156 Returns navigation - all entry points OK
+[INFO ] 2026-06-18 20:36:41.564 [main] Test142_CategorySelectionCold - [PASS] #142 Cold state: empty products state shown
+[INFO ] 2026-06-18 20:36:41.661 [main] Test142_CategorySelectionCold - #142 Selected category: laptops
+[INFO ] 2026-06-18 20:36:48.683 [main] Test142_CategorySelectionCold - [PASS] #142 Category selection cold: products loaded (count=3)
+[INFO ] 2026-06-18 20:36:48.684 [main] Test142_CategorySelectionCold - [PASS] #142 Category selection (cold) complete
+[INFO ] 2026-06-21 00:30:19.387 [main] Test142_CategorySelectionCold - [PASS] #142 Cold state: empty products state shown
+[INFO ] 2026-06-21 00:30:19.471 [main] Test142_CategorySelectionCold - #142 Selected category: laptops
+[INFO ] 2026-06-21 00:33:02.105 [main] Test142_CategorySelectionCold - [PASS] #142 Cold state: empty products state shown
+[INFO ] 2026-06-21 00:33:02.197 [main] Test142_CategorySelectionCold - #142 Selected category: laptops
+[INFO ] 2026-06-21 00:33:09.262 [main] Test142_CategorySelectionCold - [PASS] #142 Category selection cold: products loaded (count=3)
+[INFO ] 2026-06-21 00:33:09.262 [main] Test142_CategorySelectionCold - [PASS] #142 Category selection (cold) complete
+[INFO ] 2026-06-21 00:41:40.807 [main] Test142_CategorySelectionCold - #142 Testing 6 categories: [furniture, groceries, laptops, mobile-accessories, smartphones, sports-accessories]
+[INFO ] 2026-06-21 00:41:40.808 [main] Test142_CategorySelectionCold - #142 ========== Testing category: furniture ==========
+[INFO ] 2026-06-21 00:41:43.245 [main] Test142_CategorySelectionCold - #142 [furniture] Cold state confirmed: empty products state shown
+[INFO ] 2026-06-21 00:41:43.306 [main] Test142_CategorySelectionCold - #142 [furniture] Selected category
+[INFO ] 2026-06-21 00:41:50.385 [main] Test142_CategorySelectionCold - [PASS] #142 [furniture] Products loaded: 13 items, category confirmed
+[INFO ] 2026-06-21 00:41:51.143 [main] Test142_CategorySelectionCold - #142 ========== Testing category: groceries ==========
+[INFO ] 2026-06-21 00:41:53.023 [main] Test142_CategorySelectionCold - #142 [groceries] Cold state confirmed: empty products state shown
+[INFO ] 2026-06-21 00:41:53.072 [main] Test142_CategorySelectionCold - #142 [groceries] Selected category
+[INFO ] 2026-06-21 00:42:00.129 [main] Test142_CategorySelectionCold - [PASS] #142 [groceries] Products loaded: 10 items, category confirmed
+[INFO ] 2026-06-21 00:42:00.873 [main] Test142_CategorySelectionCold - #142 ========== Testing category: laptops ==========
+[INFO ] 2026-06-21 00:42:02.706 [main] Test142_CategorySelectionCold - #142 [laptops] Cold state confirmed: empty products state shown
+[INFO ] 2026-06-21 00:42:02.747 [main] Test142_CategorySelectionCold - #142 [laptops] Selected category
+[INFO ] 2026-06-21 00:42:09.805 [main] Test142_CategorySelectionCold - [PASS] #142 [laptops] Products loaded: 3 items, category confirmed
+[INFO ] 2026-06-21 00:42:10.550 [main] Test142_CategorySelectionCold - #142 ========== Testing category: mobile-accessories ==========
+[INFO ] 2026-06-21 00:42:12.417 [main] Test142_CategorySelectionCold - #142 [mobile-accessories] Cold state confirmed: empty products state shown
+[INFO ] 2026-06-21 00:42:12.453 [main] Test142_CategorySelectionCold - #142 [mobile-accessories] Selected category
+[INFO ] 2026-06-21 00:42:19.527 [main] Test142_CategorySelectionCold - [PASS] #142 [mobile-accessories] Products loaded: 10 items, category confirmed
+[INFO ] 2026-06-21 00:42:20.279 [main] Test142_CategorySelectionCold - #142 ========== Testing category: smartphones ==========
+[INFO ] 2026-06-21 00:42:22.120 [main] Test142_CategorySelectionCold - #142 [smartphones] Cold state confirmed: empty products state shown
+[INFO ] 2026-06-21 00:42:22.158 [main] Test142_CategorySelectionCold - #142 [smartphones] Selected category
+[INFO ] 2026-06-21 00:42:29.253 [main] Test142_CategorySelectionCold - [PASS] #142 [smartphones] Products loaded: 10 items, category confirmed
+[INFO ] 2026-06-21 00:42:30.014 [main] Test142_CategorySelectionCold - #142 ========== Testing category: sports-accessories ==========
+[INFO ] 2026-06-21 00:42:31.872 [main] Test142_CategorySelectionCold - #142 [sports-accessories] Cold state confirmed: empty products state shown
+[INFO ] 2026-06-21 00:42:31.917 [main] Test142_CategorySelectionCold - #142 [sports-accessories] Selected category
+[INFO ] 2026-06-21 00:42:39.007 [main] Test142_CategorySelectionCold - [PASS] #142 [sports-accessories] Products loaded: 10 items, category confirmed
+[INFO ] 2026-06-21 00:42:39.753 [main] Test142_CategorySelectionCold - #142 ========== SUMMARY ==========
+[INFO ] 2026-06-21 00:42:39.754 [main] Test142_CategorySelectionCold - #142 Passed: 6/6
+[INFO ] 2026-06-21 00:42:39.754 [main] Test142_CategorySelectionCold - [PASS] #142 Category selection (cold) - all 6 categories verified
+[INFO ] 2026-06-21 00:42:53.647 [main] Test142_CategorySelectionCold - #142 Testing 6 categories: [furniture, groceries, laptops, mobile-accessories, smartphones, sports-accessories]
+[INFO ] 2026-06-21 00:42:53.649 [main] Test142_CategorySelectionCold - #142 ========== Testing category: furniture ==========
+[INFO ] 2026-06-21 00:42:56.074 [main] Test142_CategorySelectionCold - #142 [furniture] Cold state confirmed: empty products state shown
+[INFO ] 2026-06-21 00:42:56.136 [main] Test142_CategorySelectionCold - #142 [furniture] Selected category
+[INFO ] 2026-06-21 00:43:03.222 [main] Test142_CategorySelectionCold - [PASS] #142 [furniture] Products loaded: 13 items, category confirmed
+[INFO ] 2026-06-21 00:43:03.991 [main] Test142_CategorySelectionCold - #142 ========== Testing category: groceries ==========
+[INFO ] 2026-06-21 00:43:05.856 [main] Test142_CategorySelectionCold - #142 [groceries] Cold state confirmed: empty products state shown
+[INFO ] 2026-06-21 00:43:05.915 [main] Test142_CategorySelectionCold - #142 [groceries] Selected category
+[INFO ] 2026-06-21 00:43:13.016 [main] Test142_CategorySelectionCold - [PASS] #142 [groceries] Products loaded: 10 items, category confirmed
+[INFO ] 2026-06-21 00:43:13.776 [main] Test142_CategorySelectionCold - #142 ========== Testing category: laptops ==========
+[INFO ] 2026-06-21 00:43:27.074 [main] Test146_CategorySelectionHot - #146 Testing hot switching through 6 categories: [furniture, groceries, laptops, mobile-accessories, smartphones, sports-accessories]
+[INFO ] 2026-06-21 00:43:28.388 [main] Test146_CategorySelectionHot - #146 ========== Initial category: furniture ==========
+[INFO ] 2026-06-21 00:43:30.499 [main] Test146_CategorySelectionHot - #146 [furniture] Initial selection: 13 products, first: Bedside Table African Cherry
+[INFO ] 2026-06-21 00:43:30.499 [main] Test146_CategorySelectionHot - [PASS] #146 [furniture] Initial category loaded
+[INFO ] 2026-06-21 00:43:30.500 [main] Test146_CategorySelectionHot - #146 ========== Switching: furniture -> groceries ==========
+[INFO ] 2026-06-21 00:43:32.607 [main] Test146_CategorySelectionHot - #146 [groceries] After switch: 18 products, first: Bedside Table African Cherry
+[INFO ] 2026-06-21 00:43:32.607 [main] Test146_CategorySelectionHot - [PASS] #146 [furniture -> groceries] Switch successful: products loaded, category confirmed
+[INFO ] 2026-06-21 00:43:32.607 [main] Test146_CategorySelectionHot - #146 ========== Switching: groceries -> laptops ==========
+[INFO ] 2026-06-21 00:43:34.710 [main] Test146_CategorySelectionHot - #146 [laptops] After switch: 11 products, first: Bedside Table African Cherry
+[INFO ] 2026-06-21 00:43:34.710 [main] Test146_CategorySelectionHot - [PASS] #146 [groceries -> laptops] Switch successful: products loaded, category confirmed
+[INFO ] 2026-06-21 00:43:34.710 [main] Test146_CategorySelectionHot - #146 ========== Switching: laptops -> mobile-accessories ==========
+[INFO ] 2026-06-21 00:43:36.818 [main] Test146_CategorySelectionHot - #146 [mobile-accessories] After switch: 18 products, first: Bedside Table African Cherry
+[INFO ] 2026-06-21 00:43:36.819 [main] Test146_CategorySelectionHot - [PASS] #146 [laptops -> mobile-accessories] Switch successful: products loaded, category confirmed
+[INFO ] 2026-06-21 00:43:36.819 [main] Test146_CategorySelectionHot - #146 ========== Switching: mobile-accessories -> smartphones ==========
+[INFO ] 2026-06-21 00:43:38.930 [main] Test146_CategorySelectionHot - #146 [smartphones] After switch: 18 products, first: Bedside Table African Cherry
+[INFO ] 2026-06-21 00:43:38.930 [main] Test146_CategorySelectionHot - [PASS] #146 [mobile-accessories -> smartphones] Switch successful: products loaded, category confirmed
+[INFO ] 2026-06-21 00:43:38.930 [main] Test146_CategorySelectionHot - #146 ========== Switching: smartphones -> sports-accessories ==========
+[INFO ] 2026-06-21 00:43:41.027 [main] Test146_CategorySelectionHot - #146 [sports-accessories] After switch: 8 products, first: Bedside Table African Cherry
+[INFO ] 2026-06-21 00:43:41.027 [main] Test146_CategorySelectionHot - [PASS] #146 [smartphones -> sports-accessories] Switch successful: products loaded, category confirmed
+[INFO ] 2026-06-21 00:43:41.027 [main] Test146_CategorySelectionHot - #146 ========== SUMMARY ==========
+[INFO ] 2026-06-21 00:43:41.027 [main] Test146_CategorySelectionHot - #146 Total switches: 5
+[INFO ] 2026-06-21 00:43:41.028 [main] Test146_CategorySelectionHot - #146 Passed: 6/6
+[INFO ] 2026-06-21 00:43:41.028 [main] Test146_CategorySelectionHot - [PASS] #146 Category selection (hot) - all 5 switches verified
+[INFO ] 2026-06-21 13:03:50.110 [main] Test146_CategorySelectionHot - #146 Testing hot switching through 6 categories: [furniture, groceries, laptops, mobile-accessories, smartphones, sports-accessories]
+[INFO ] 2026-06-21 13:03:52.156 [main] Test146_CategorySelectionHot - #146 ========== Initial category: furniture ==========
+[INFO ] 2026-06-21 13:03:54.316 [main] Test146_CategorySelectionHot - #146 [furniture] Initial: 13 products, first: Bedside Table African Cherry
+[INFO ] 2026-06-21 13:03:54.316 [main] Test146_CategorySelectionHot - [PASS] #146 [furniture] Initial category loaded correctly
+[INFO ] 2026-06-21 13:03:54.316 [main] Test146_CategorySelectionHot - #146 ========== Switching: furniture -> groceries ==========
+[INFO ] 2026-06-21 13:03:56.399 [main] Test146_CategorySelectionHot - #146 [groceries] Dropdown confirmed: groceries
+[INFO ] 2026-06-21 13:03:56.416 [main] Test146_CategorySelectionHot - #146 [groceries] Products: 18, first: Bedside Table African Cherry
+[ERROR] 2026-06-21 13:03:56.416 [main] Test146_CategorySelectionHot - [FAIL] #146 [furniture -> groceries] PRODUCTS DID NOT CHANGE!
+[ERROR] 2026-06-21 13:03:56.416 [main] Test146_CategorySelectionHot -        Previous first product: Bedside Table African Cherry
+[ERROR] 2026-06-21 13:03:56.416 [main] Test146_CategorySelectionHot -        Current first product:  Bedside Table African Cherry
+[ERROR] 2026-06-21 13:03:56.416 [main] Test146_CategorySelectionHot -        This indicates the category switch didn't actually work!
+[INFO ] 2026-06-21 13:03:56.416 [main] Test146_CategorySelectionHot - #146 ========== Switching: groceries -> laptops ==========
+[INFO ] 2026-06-21 13:03:58.495 [main] Test146_CategorySelectionHot - #146 [laptops] Dropdown confirmed: laptops
+[INFO ] 2026-06-21 13:03:58.513 [main] Test146_CategorySelectionHot - #146 [laptops] Products: 8, first: Bedside Table African Cherry
+[ERROR] 2026-06-21 13:03:58.513 [main] Test146_CategorySelectionHot - [FAIL] #146 [groceries -> laptops] PRODUCTS DID NOT CHANGE!
+[ERROR] 2026-06-21 13:03:58.513 [main] Test146_CategorySelectionHot -        Previous first product: Bedside Table African Cherry
+[ERROR] 2026-06-21 13:03:58.513 [main] Test146_CategorySelectionHot -        Current first product:  Bedside Table African Cherry
+[ERROR] 2026-06-21 13:03:58.513 [main] Test146_CategorySelectionHot -        This indicates the category switch didn't actually work!
+[INFO ] 2026-06-21 13:03:58.513 [main] Test146_CategorySelectionHot - #146 ========== Switching: laptops -> mobile-accessories ==========
+[INFO ] 2026-06-21 13:04:00.605 [main] Test146_CategorySelectionHot - #146 [mobile-accessories] Dropdown confirmed: mobile-accessories
+[INFO ] 2026-06-21 13:04:00.624 [main] Test146_CategorySelectionHot - #146 [mobile-accessories] Products: 11, first: Bedside Table African Cherry
+[ERROR] 2026-06-21 13:04:00.624 [main] Test146_CategorySelectionHot - [FAIL] #146 [laptops -> mobile-accessories] PRODUCTS DID NOT CHANGE!
+[ERROR] 2026-06-21 13:04:00.624 [main] Test146_CategorySelectionHot -        Previous first product: Bedside Table African Cherry
+[ERROR] 2026-06-21 13:04:00.624 [main] Test146_CategorySelectionHot -        Current first product:  Bedside Table African Cherry
+[ERROR] 2026-06-21 13:04:00.624 [main] Test146_CategorySelectionHot -        This indicates the category switch didn't actually work!
+[INFO ] 2026-06-21 13:04:00.624 [main] Test146_CategorySelectionHot - #146 ========== Switching: mobile-accessories -> smartphones ==========
+[INFO ] 2026-06-21 13:04:02.727 [main] Test146_CategorySelectionHot - #146 [smartphones] Dropdown confirmed: smartphones
+[INFO ] 2026-06-21 13:04:02.749 [main] Test146_CategorySelectionHot - #146 [smartphones] Products: 18, first: Bedside Table African Cherry
+[ERROR] 2026-06-21 13:04:02.749 [main] Test146_CategorySelectionHot - [FAIL] #146 [mobile-accessories -> smartphones] PRODUCTS DID NOT CHANGE!
+[ERROR] 2026-06-21 13:04:02.749 [main] Test146_CategorySelectionHot -        Previous first product: Bedside Table African Cherry
+[ERROR] 2026-06-21 13:04:02.749 [main] Test146_CategorySelectionHot -        Current first product:  Bedside Table African Cherry
+[ERROR] 2026-06-21 13:04:02.749 [main] Test146_CategorySelectionHot -        This indicates the category switch didn't actually work!
+[INFO ] 2026-06-21 13:04:02.749 [main] Test146_CategorySelectionHot - #146 ========== Switching: smartphones -> sports-accessories ==========
+[INFO ] 2026-06-21 13:04:04.848 [main] Test146_CategorySelectionHot - #146 [sports-accessories] Dropdown confirmed: sports-accessories
+[INFO ] 2026-06-21 13:04:04.866 [main] Test146_CategorySelectionHot - #146 [sports-accessories] Products: 18, first: Bedside Table African Cherry
+[ERROR] 2026-06-21 13:04:04.866 [main] Test146_CategorySelectionHot - [FAIL] #146 [smartphones -> sports-accessories] PRODUCTS DID NOT CHANGE!
+[ERROR] 2026-06-21 13:04:04.866 [main] Test146_CategorySelectionHot -        Previous first product: Bedside Table African Cherry
+[ERROR] 2026-06-21 13:04:04.866 [main] Test146_CategorySelectionHot -        Current first product:  Bedside Table African Cherry
+[ERROR] 2026-06-21 13:04:04.866 [main] Test146_CategorySelectionHot -        This indicates the category switch didn't actually work!
+[INFO ] 2026-06-21 13:04:04.866 [main] Test146_CategorySelectionHot - #146 ========== SUMMARY ==========
+[INFO ] 2026-06-21 13:04:04.866 [main] Test146_CategorySelectionHot - #146 Total switches attempted: 5
+[INFO ] 2026-06-21 13:04:04.867 [main] Test146_CategorySelectionHot - #146 Passed: 1/6
+[ERROR] 2026-06-21 13:04:04.867 [main] Test146_CategorySelectionHot - #146 Failed: 5/6
+[ERROR] 2026-06-21 13:04:04.867 [main] Test146_CategorySelectionHot - #146 NOTE: If 'STUCK' errors appeared, there's a bug preventing category switching!
+[INFO ] 2026-06-21 13:04:45.369 [main] Test146_CategorySelectionHot - #146 Testing hot switching through 6 categories: [furniture, groceries, laptops, mobile-accessories, smartphones, sports-accessories]
+[INFO ] 2026-06-21 13:04:46.509 [main] Test146_CategorySelectionHot - #146 ========== Initial category: furniture ==========
+[INFO ] 2026-06-21 13:04:48.665 [main] Test146_CategorySelectionHot - #146 [furniture] Initial: 13 products, first: Bedside Table African Cherry
+[INFO ] 2026-06-21 13:04:48.665 [main] Test146_CategorySelectionHot - [PASS] #146 [furniture] Initial category loaded correctly
+[INFO ] 2026-06-21 13:04:48.665 [main] Test146_CategorySelectionHot - #146 ========== Switching: furniture -> groceries ==========
+[INFO ] 2026-06-21 13:04:50.749 [main] Test146_CategorySelectionHot - #146 [groceries] Dropdown confirmed: groceries
+[INFO ] 2026-06-21 13:04:50.770 [main] Test146_CategorySelectionHot - #146 [groceries] Products: 18, first: Bedside Table African Cherry
+[ERROR] 2026-06-21 13:04:50.770 [main] Test146_CategorySelectionHot - [FAIL] #146 [furniture -> groceries] PRODUCTS DID NOT CHANGE!
+[ERROR] 2026-06-21 13:04:50.770 [main] Test146_CategorySelectionHot -        Previous first product: Bedside Table African Cherry
+[ERROR] 2026-06-21 13:04:50.770 [main] Test146_CategorySelectionHot -        Current first product:  Bedside Table African Cherry
+[ERROR] 2026-06-21 13:04:50.771 [main] Test146_CategorySelectionHot -        This indicates the category switch didn't actually work!
+[INFO ] 2026-06-21 13:04:50.771 [main] Test146_CategorySelectionHot - #146 ========== Switching: groceries -> laptops ==========
+[INFO ] 2026-06-21 13:05:00.585 [main] Test161_ApiProductFetch - [PASS] #161 furniture -> 5 products, all descriptors present
+[INFO ] 2026-06-21 13:05:00.809 [main] Test161_ApiProductFetch - [PASS] #161 groceries -> 10 products, all descriptors present
+[INFO ] 2026-06-21 13:05:00.934 [main] Test161_ApiProductFetch - [PASS] #161 laptops -> 5 products, all descriptors present
+[INFO ] 2026-06-21 13:05:01.139 [main] Test161_ApiProductFetch - [PASS] #161 mobile-accessories -> 10 products, all descriptors present
+[INFO ] 2026-06-21 13:05:01.343 [main] Test161_ApiProductFetch - [PASS] #161 smartphones -> 10 products, all descriptors present
+[INFO ] 2026-06-21 13:05:01.546 [main] Test161_ApiProductFetch - [PASS] #161 sports-accessories -> 10 products, all descriptors present
+[INFO ] 2026-06-21 13:05:01.546 [main] Test161_ApiProductFetch - [PASS] #161 API product fetch — all categories OK
+[INFO ] 2026-06-21 13:11:52.365 [main] Test166_AddProductsToOrder - #166 Initial empty state: true
+[INFO ] 2026-06-21 13:11:54.480 [main] Test166_AddProductsToOrder - #166 Adding product 1: iPad Mini 2021 Starlight
+[INFO ] 2026-06-21 13:12:00.796 [main] Test166_AddProductsToOrder - #166 After adding product 1: rows=0, sum=$6.000600202149999E49
+[INFO ] 2026-06-21 13:12:05.802 [main] Test166_AddProductsToOrder - [PASS] #166 First product added to summary
+[INFO ] 2026-06-21 13:12:07.872 [main] Test166_AddProductsToOrder - #166 Adding product 2: American Football
+[INFO ] 2026-06-21 13:12:14.232 [main] Test166_AddProductsToOrder - #166 After adding product 2: rows=0, sum=$4.50451999538991E88
+[INFO ] 2026-06-21 13:12:14.232 [main] Test166_AddProductsToOrder - [PASS] #166 Sum increased after adding second product
+[INFO ] 2026-06-21 13:14:19.773 [main] Test166_AddProductsToOrder - #166 Initial empty state: true
+[INFO ] 2026-06-21 13:14:21.884 [main] Test166_AddProductsToOrder - #166 Adding product 1: iPad Mini 2021 Starlight
+[INFO ] 2026-06-21 13:14:28.192 [main] Test166_AddProductsToOrder - #166 After adding product 1: rows=0, sum=$6.000600202149999E49
+[INFO ] 2026-06-21 13:14:33.199 [main] Test166_AddProductsToOrder - [PASS] #166 First product added to summary
+[INFO ] 2026-06-21 13:14:35.277 [main] Test166_AddProductsToOrder - #166 Adding product 2: American Football
+[INFO ] 2026-06-21 13:14:42.656 [main] Test166_AddProductsToOrder - #166 After adding product 2: rows=0, sum=$4.50451999538991E88
+[INFO ] 2026-06-21 13:14:42.656 [main] Test166_AddProductsToOrder - [PASS] #166 Sum increased after adding second product
+[INFO ] 2026-06-21 13:17:47.873 [main] Test166_AddProductsToOrder - #166 Initial empty state: true
+[INFO ] 2026-06-21 13:17:49.988 [main] Test166_AddProductsToOrder - #166 Adding product 1: iPad Mini 2021 Starlight
+[INFO ] 2026-06-21 13:17:56.303 [main] Test166_AddProductsToOrder - #166 After adding product 1: rows=0, sum=$6.000600202149999E49
+[INFO ] 2026-06-21 13:18:01.332 [main] Test166_AddProductsToOrder - [PASS] #166 First product added to summary
+[INFO ] 2026-06-21 13:18:03.414 [main] Test166_AddProductsToOrder - #166 Adding product 2: American Football
+[INFO ] 2026-06-21 13:18:09.727 [main] Test166_AddProductsToOrder - #166 After adding product 2: rows=0, sum=$4.50451999538991E88
+[INFO ] 2026-06-21 13:18:09.727 [main] Test166_AddProductsToOrder - [PASS] #166 Sum increased after adding second product
+[INFO ] 2026-06-21 13:18:09.727 [main] Test166_AddProductsToOrder - [PASS] #166 Add products to order test complete
+[INFO ] 2026-06-21 13:26:17.798 [main] Test166_AddProductsToOrder - #166 Initial empty state: true
+[INFO ] 2026-06-21 13:26:19.918 [main] Test166_AddProductsToOrder - #166 Adding product 1: iPad Mini 2021 Starlight
+[INFO ] 2026-06-21 13:26:26.267 [main] Test166_AddProductsToOrder - #166 After adding product 1: rows=0, sum=$6.000600202149999E49
+[INFO ] 2026-06-21 13:26:31.296 [main] Test166_AddProductsToOrder - [PASS] #166 First product added to summary
+[INFO ] 2026-06-21 13:26:33.368 [main] Test166_AddProductsToOrder - #166 Adding product 2: American Football
+[INFO ] 2026-06-21 13:26:39.697 [main] Test166_AddProductsToOrder - #166 After adding product 2: rows=0, sum=$4.50451999538991E88
+[INFO ] 2026-06-21 13:26:39.697 [main] Test166_AddProductsToOrder - [PASS] #166 Sum increased after adding second product
+[INFO ] 2026-06-21 13:26:39.697 [main] Test166_AddProductsToOrder - [PASS] #166 Add products to order test complete
+[INFO ] 2026-06-21 13:26:47.526 [main] Test166_AddProductsToOrder - #166 Initial empty state: true
+[INFO ] 2026-06-21 13:26:49.643 [main] Test166_AddProductsToOrder - #166 Adding product 1: iPad Mini 2021 Starlight
+[INFO ] 2026-06-21 13:26:55.973 [main] Test166_AddProductsToOrder - #166 After adding product 1: rows=0, sum=$6.000600202149999E49
+[INFO ] 2026-06-21 13:27:00.995 [main] Test166_AddProductsToOrder - [PASS] #166 First product added to summary
+[INFO ] 2026-06-21 13:27:03.067 [main] Test166_AddProductsToOrder - #166 Adding product 2: American Football
+[INFO ] 2026-06-21 13:27:09.406 [main] Test166_AddProductsToOrder - #166 After adding product 2: rows=0, sum=$4.50451999538991E88
+[INFO ] 2026-06-21 13:27:09.406 [main] Test166_AddProductsToOrder - [PASS] #166 Sum increased after adding second product
+[INFO ] 2026-06-21 13:27:09.406 [main] Test166_AddProductsToOrder - [PASS] #166 Add products to order test complete
+[INFO ] 2026-06-21 13:32:35.286 [main] Test166_AddProductsToOrder - #166 Initial empty state: true
+[INFO ] 2026-06-21 13:32:37.397 [main] Test166_AddProductsToOrder - #166 Adding product 1: iPad Mini 2021 Starlight
+[INFO ] 2026-06-21 13:32:43.725 [main] Test166_AddProductsToOrder - #166 After adding product 1: rows=0, sum=$6.000600202149999E49
+[INFO ] 2026-06-21 13:32:48.738 [main] Test166_AddProductsToOrder - [PASS] #166 First product added to summary
+[INFO ] 2026-06-21 13:32:50.818 [main] Test166_AddProductsToOrder - #166 Adding product 2: American Football
+[INFO ] 2026-06-21 13:32:57.153 [main] Test166_AddProductsToOrder - #166 After adding product 2: rows=0, sum=$4.50451999538991E88
+[INFO ] 2026-06-21 13:32:57.153 [main] Test166_AddProductsToOrder - [PASS] #166 Sum increased after adding second product
+[INFO ] 2026-06-21 13:32:57.153 [main] Test166_AddProductsToOrder - #166 Testing quantity increase with + button...
+[WARN ] 2026-06-21 13:33:13.311 [main] Test166_AddProductsToOrder - [WARN] #166 Plus button not found or not clickable: Expected condition failed: waiting for element to be clickable: By.xpath: //*[.//*[contains(normalize-space(),'iPad')]]//button[normalize-space()='+'] | //*[.//*[contains(normalize-space(),'iPad')]]//button[contains(@aria-label,'ncrease') or contains(@aria-label,'add') or contains(@aria-label,'plus')] | //section[contains(@class,'order') or contains(@class,'cart') or contains(@class,'summary')]//button[normalize-space()='+'] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.12.83', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.116, chrome: {chromedriverVersion: 147.0.7727.116 (dbcf1b1bfb5..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:39977}, goog:processID: 12180, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:39977/devtoo..., se:cdpVersion: 147.0.7727.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 65e69811918de97e9cf2df163d864775
+[WARN ] 2026-06-21 13:33:13.311 [main] Test166_AddProductsToOrder -        This may indicate the summary row locators need adjustment
+[INFO ] 2026-06-21 13:33:13.311 [main] Test166_AddProductsToOrder - [PASS] #166 Add products to order test complete
+[INFO ] 2026-06-21 13:33:20.381 [main] Test166_AddProductsToOrder - #166 Initial empty state: true
+[INFO ] 2026-06-21 13:33:22.497 [main] Test166_AddProductsToOrder - #166 Adding product 1: iPad Mini 2021 Starlight
+[INFO ] 2026-06-21 13:33:28.820 [main] Test166_AddProductsToOrder - #166 After adding product 1: rows=0, sum=$6.000600202149999E49
+[INFO ] 2026-06-21 13:33:33.843 [main] Test166_AddProductsToOrder - [PASS] #166 First product added to summary
+[INFO ] 2026-06-21 13:33:35.933 [main] Test166_AddProductsToOrder - #166 Adding product 2: American Football
+[INFO ] 2026-06-21 13:33:42.235 [main] Test166_AddProductsToOrder - #166 After adding product 2: rows=0, sum=$4.50451999538991E88
+[INFO ] 2026-06-21 13:33:42.235 [main] Test166_AddProductsToOrder - [PASS] #166 Sum increased after adding second product
+[INFO ] 2026-06-21 13:33:42.235 [main] Test166_AddProductsToOrder - #166 Testing quantity increase with + button...
+[WARN ] 2026-06-21 13:33:58.368 [main] Test166_AddProductsToOrder - [WARN] #166 Plus button not found or not clickable: Expected condition failed: waiting for element to be clickable: By.xpath: //*[.//*[contains(normalize-space(),'iPad')]]//button[normalize-space()='+'] | //*[.//*[contains(normalize-space(),'iPad')]]//button[contains(@aria-label,'ncrease') or contains(@aria-label,'add') or contains(@aria-label,'plus')] | //section[contains(@class,'order') or contains(@class,'cart') or contains(@class,'summary')]//button[normalize-space()='+'] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '6.12.83', java.version: '17.0.18'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 147.0.7727.116, chrome: {chromedriverVersion: 147.0.7727.116 (dbcf1b1bfb5..., userDataDir: /tmp/org.chromium.Chromium....}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34497}, goog:processID: 12518, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34497/devtoo..., se:cdpVersion: 147.0.7727.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fddfefd3c332962ac7e14c79f585228f
+[WARN ] 2026-06-21 13:33:58.369 [main] Test166_AddProductsToOrder -        This may indicate the summary row locators need adjustment
+[INFO ] 2026-06-21 13:33:58.369 [main] Test166_AddProductsToOrder - [PASS] #166 Add products to order test complete
+[INFO ] 2026-06-21 13:58:42.444 [main] Test166_AddProductsToOrder - #166 Initial empty state: true
+[INFO ] 2026-06-21 13:58:44.586 [main] Test166_AddProductsToOrder - #166 Adding product 1: iPad Mini 2021 Starlight
+[INFO ] 2026-06-21 13:58:50.902 [main] Test166_AddProductsToOrder - #166 After adding product 1: rows=0, sum=$6.000600202149999E49
+[INFO ] 2026-06-21 13:58:55.920 [main] Test166_AddProductsToOrder - [PASS] #166 First product added to summary
+[INFO ] 2026-06-21 13:58:58.009 [main] Test166_AddProductsToOrder - #166 Adding product 2: Order Summary
+[INFO ] 2026-06-21 13:59:06.037 [main] Test166_AddProductsToOrder - #166 After adding product 2: rows=0, sum=$4.50451999538991E88
+[INFO ] 2026-06-21 13:59:06.037 [main] Test166_AddProductsToOrder - [PASS] #166 Sum increased after adding second product
+[INFO ] 2026-06-21 13:59:06.037 [main] Test166_AddProductsToOrder - #166 Testing quantity increase with + button...
+[INFO ] 2026-06-21 13:59:07.076 [main] Test166_AddProductsToOrder - [PASS] #166 Plus button clicked successfully
+[INFO ] 2026-06-21 13:59:07.076 [main] Test166_AddProductsToOrder - [PASS] #166 Add products to order test complete
+[INFO ] 2026-06-21 14:01:46.018 [main] Test166_AddProductsToOrder - #166 Initial empty state: true
+[INFO ] 2026-06-21 14:01:48.129 [main] Test166_AddProductsToOrder - #166 Adding product 1: iPad Mini 2021 Starlight
+[INFO ] 2026-06-21 14:01:54.431 [main] Test166_AddProductsToOrder - #166 After adding product 1: rows=0, sum=$6.000600202149999E49
+[INFO ] 2026-06-21 14:01:59.456 [main] Test166_AddProductsToOrder - [PASS] #166 First product added to summary
+[INFO ] 2026-06-21 14:02:01.539 [main] Test166_AddProductsToOrder - #166 Adding product 2: American Football
+[INFO ] 2026-06-21 14:02:07.846 [main] Test166_AddProductsToOrder - #166 After adding product 2: rows=0, sum=$4.50451999538991E88
+[INFO ] 2026-06-21 14:02:07.846 [main] Test166_AddProductsToOrder - [PASS] #166 Sum increased after adding second product
+[INFO ] 2026-06-21 14:02:07.846 [main] Test166_AddProductsToOrder - #166 Testing quantity increase with + button...
+[INFO ] 2026-06-21 14:02:08.880 [main] Test166_AddProductsToOrder - [PASS] #166 Plus button clicked successfully
+[INFO ] 2026-06-21 14:02:08.881 [main] Test166_AddProductsToOrder - [PASS] #166 Add products to order test complete
+[INFO ] 2026-06-21 14:03:16.613 [main] Test166_AddProductsToOrder - #166 Initial empty state: true
+[INFO ] 2026-06-21 14:03:18.740 [main] Test166_AddProductsToOrder - #166 Adding product 1: iPad Mini 2021 Starlight
+[INFO ] 2026-06-21 14:03:25.048 [main] Test166_AddProductsToOrder - #166 After adding product 1: rows=0, sum=$6.000600202149999E49
+[INFO ] 2026-06-21 14:03:30.083 [main] Test166_AddProductsToOrder - [PASS] #166 First product added to summary
+[INFO ] 2026-06-21 14:03:32.159 [main] Test166_AddProductsToOrder - #166 Adding product 2: American Football
+[INFO ] 2026-06-21 14:03:38.465 [main] Test166_AddProductsToOrder - #166 After adding product 2: rows=0, sum=$4.50451999538991E88
+[INFO ] 2026-06-21 14:03:38.465 [main] Test166_AddProductsToOrder - [PASS] #166 Sum increased after adding second product
+[INFO ] 2026-06-21 14:03:38.465 [main] Test166_AddProductsToOrder - #166 Testing quantity increase with + button...
+[INFO ] 2026-06-21 14:03:40.523 [main] Test166_AddProductsToOrder - [PASS] #166 Plus button clicked successfully
+[INFO ] 2026-06-21 14:03:40.523 [main] Test166_AddProductsToOrder - [PASS] #166 Add products to order test complete
+[INFO ] 2026-06-21 14:08:10.700 [main] Test166_AddProductsToOrder - #166 Initial empty state: true
+[INFO ] 2026-06-21 14:08:12.821 [main] Test166_AddProductsToOrder - #166 Adding product 1: iPad Mini 2021 Starlight
+[INFO ] 2026-06-21 14:08:19.141 [main] Test166_AddProductsToOrder - #166 After adding product 1: rows=0, sum=$6.000600202149999E49
+[INFO ] 2026-06-21 14:08:24.168 [main] Test166_AddProductsToOrder - [PASS] #166 First product added to summary
+[INFO ] 2026-06-21 14:08:26.251 [main] Test166_AddProductsToOrder - #166 Adding product 2: American Football
+[INFO ] 2026-06-21 14:08:32.595 [main] Test166_AddProductsToOrder - #166 After adding product 2: rows=0, sum=$4.50451999538991E88
+[INFO ] 2026-06-21 14:08:32.596 [main] Test166_AddProductsToOrder - [PASS] #166 Sum increased after adding second product
+[INFO ] 2026-06-21 14:08:32.596 [main] Test166_AddProductsToOrder - #166 Testing quantity increase with + button...
+[INFO ] 2026-06-21 14:08:35.108 [main] Test166_AddProductsToOrder - [PASS] #166 Plus button clicked successfully
+[INFO ] 2026-06-21 14:08:35.108 [main] Test166_AddProductsToOrder - [PASS] #166 Add products to order test complete
+[INFO ] 2026-06-21 14:26:58.668 [main] Test166_AddProductsToOrder - #166 Initial empty state: true
+[INFO ] 2026-06-21 14:27:00.781 [main] Test166_AddProductsToOrder - #166 Adding product 1: iPad Mini 2021 Starlight
+[INFO ] 2026-06-21 14:27:07.108 [main] Test166_AddProductsToOrder - #166 After adding product 1: rows=0, sum=$6.000600202149999E49
+[INFO ] 2026-06-21 14:27:12.129 [main] Test166_AddProductsToOrder - [PASS] #166 First product added to summary
+[INFO ] 2026-06-21 14:27:14.202 [main] Test166_AddProductsToOrder - #166 Adding product 2: American Football
+[INFO ] 2026-06-21 14:27:20.575 [main] Test166_AddProductsToOrder - #166 After adding product 2: rows=0, sum=$4.50451999538991E88
+[INFO ] 2026-06-21 14:27:20.575 [main] Test166_AddProductsToOrder - [PASS] #166 Sum increased after adding second product
+[INFO ] 2026-06-21 14:27:20.575 [main] Test166_AddProductsToOrder - #166 Testing quantity increase with + button...
+[INFO ] 2026-06-21 14:27:23.088 [main] Test166_AddProductsToOrder - [PASS] #166 Plus button clicked successfully
+[INFO ] 2026-06-21 14:27:23.088 [main] Test166_AddProductsToOrder - [PASS] #166 Add products to order test complete
+[INFO ] 2026-06-21 14:28:17.190 [main] Test166_AddProductsToOrder - #166 Initial empty state: true
+[INFO ] 2026-06-21 14:28:19.304 [main] Test166_AddProductsToOrder - #166 Adding product 1: iPad Mini 2021 Starlight
+[INFO ] 2026-06-21 14:28:25.638 [main] Test166_AddProductsToOrder - #166 After adding product 1: rows=0, sum=$2147483647
+[INFO ] 2026-06-21 14:28:30.656 [main] Test166_AddProductsToOrder - [PASS] #166 First product added to summary
+[INFO ] 2026-06-21 14:28:32.722 [main] Test166_AddProductsToOrder - #166 Adding product 2: American Football
+[INFO ] 2026-06-21 14:28:39.027 [main] Test166_AddProductsToOrder - #166 After adding product 2: rows=0, sum=$4.50451999538991E88
+[INFO ] 2026-06-21 14:28:39.027 [main] Test166_AddProductsToOrder - [PASS] #166 Sum increased after adding second product
+[INFO ] 2026-06-21 14:28:39.027 [main] Test166_AddProductsToOrder - #166 Testing quantity increase with + button...
+[INFO ] 2026-06-21 14:28:41.531 [main] Test166_AddProductsToOrder - [PASS] #166 Plus button clicked successfully
+[INFO ] 2026-06-21 14:28:41.531 [main] Test166_AddProductsToOrder - [PASS] #166 Add products to order test complete
+[INFO ] 2026-06-21 14:29:12.747 [main] Test166_AddProductsToOrder - #166 Initial empty state: true
+[INFO ] 2026-06-21 14:29:14.829 [main] Test166_AddProductsToOrder - #166 Adding product 1: iPad Mini 2021 Starlight
+[INFO ] 2026-06-21 14:29:21.138 [main] Test166_AddProductsToOrder - #166 After adding product 1: rows=0, sum=$2147483647
+[INFO ] 2026-06-21 14:29:26.145 [main] Test166_AddProductsToOrder - [PASS] #166 First product added to summary
+[INFO ] 2026-06-21 14:29:28.218 [main] Test166_AddProductsToOrder - #166 Adding product 2: American Football
+[INFO ] 2026-06-21 14:29:34.551 [main] Test166_AddProductsToOrder - #166 After adding product 2: rows=0, sum=$2147483647
+[INFO ] 2026-06-21 14:29:34.552 [main] Test166_AddProductsToOrder - [PASS] #166 Sum increased after adding second product
+[INFO ] 2026-06-21 14:29:34.552 [main] Test166_AddProductsToOrder - #166 Testing quantity increase with + button...
+[INFO ] 2026-06-21 14:29:37.053 [main] Test166_AddProductsToOrder - [PASS] #166 Plus button clicked successfully
+[INFO ] 2026-06-21 14:29:37.053 [main] Test166_AddProductsToOrder - [PASS] #166 Add products to order test complete
+[INFO ] 2026-06-21 14:47:31.057 [main] Test166_AddProductsToOrder - #166 Initial empty state: true
+[INFO ] 2026-06-21 14:47:33.171 [main] Test166_AddProductsToOrder - #166 Adding product 1: iPad Mini 2021 Starlight
+[INFO ] 2026-06-21 14:47:39.505 [main] Test166_AddProductsToOrder - #166 After adding product 1: rows=0, sum=$499.99
+[INFO ] 2026-06-21 14:47:44.551 [main] Test166_AddProductsToOrder - [PASS] #166 First product added to summary
+[INFO ] 2026-06-21 14:47:46.618 [main] Test166_AddProductsToOrder - #166 Adding product 2: American Football
+[INFO ] 2026-06-21 14:47:52.932 [main] Test166_AddProductsToOrder - #166 After adding product 2: rows=0, sum=$519.98
+[INFO ] 2026-06-21 14:47:52.932 [main] Test166_AddProductsToOrder - [PASS] #166 Sum increased after adding second product
+[INFO ] 2026-06-21 14:47:52.932 [main] Test166_AddProductsToOrder - #166 Testing quantity increase with + button...
+[INFO ] 2026-06-21 14:47:55.435 [main] Test166_AddProductsToOrder - [PASS] #166 Plus button clicked successfully
+[INFO ] 2026-06-21 14:47:55.435 [main] Test166_AddProductsToOrder - [PASS] #166 Add products to order test complete

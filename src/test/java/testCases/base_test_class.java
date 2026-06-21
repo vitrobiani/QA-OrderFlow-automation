@@ -23,12 +23,20 @@ public class base_test_class {
     /**
      * Course-standard driver initializer. Selenium 4.16 has Selenium Manager built in,
      * so no chromedriver path is needed. The old course line is kept commented for familiarity.
+     *
+     * NixOS support: If CHROME_BIN env var is set, use that binary (for Chromium).
      */
     public static WebDriver initializeDriver() {
         // Old course style (kept for reference — Selenium Manager replaces it):
         // System.setProperty("webdriver.chrome.driver", "C:\\...\\chromedriver.exe");
 
         ChromeOptions options = new ChromeOptions();
+
+        // NixOS: Use CHROME_BIN if set (points to Chromium)
+        String chromeBin = System.getenv("CHROME_BIN");
+        if (chromeBin != null && !chromeBin.isEmpty()) {
+            options.setBinary(chromeBin);
+        }
 
         // Force downloads into ./downloads so Test174 (CSV export) can find the file.
         File dlDir = new File("downloads");
