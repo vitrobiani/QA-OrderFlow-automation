@@ -47,27 +47,28 @@ public class Test165_OrderSumThreshold {
         nav.goNewOrder();
         assertTrue("New Order page not loaded", orderPage.isLoaded());
 
-        // Select expensive category (smartphones tend to be expensive)
-        orderPage.selectCategory("smartphones");
+        // Select expensive category (laptops/tablets — high enough price-per-unit to
+        // cross $10k at max-allowed qty without exceeding stock)
+        orderPage.selectCategory("laptops");
         Thread.sleep(2000);
 
         String productName = orderPage.firstProductName();
-        logger.info("#165 Testing with product: " + productName);
+        int stock = orderPage.firstProductStock();
+        logger.info("#165 Testing with product: " + productName + " (stock=" + stock + ")");
 
-        // Add product with high quantity to exceed $10,000
+        // Add product, set qty = stock (max allowed by R1 → R2 fires alone if sum still > $10k)
         orderPage.addFirstProduct();
         Thread.sleep(1000);
 
-        // Set quantity high enough to exceed threshold
-        // Assuming average smartphone ~$500-1000, qty of 50 should exceed $10,000
-        int highQty = 50;
-        orderPage.setQuantity(productName, highQty);
-        logger.info("#165 Set quantity to: " + highQty);
+        orderPage.setQuantity(productName, stock);
+        logger.info("#165 Set quantity to: " + stock);
         Thread.sleep(500);
 
         // Check current sum
         double currentSum = orderPage.orderSum();
         logger.info("#165 Current order sum: $" + currentSum);
+        assertTrue("Test setup: qty=stock should push sum over $10,000 for smartphones",
+                   currentSum > base_test_class.SUM_CAP);
 
         // Attempt to submit
         orderPage.submit();
@@ -105,6 +106,14 @@ public class Test165_OrderSumThreshold {
                 logger.info("[PASS] #165 Error message mentions sum threshold issue");
             } else {
                 logger.warn("[WARN] #165 Error message doesn't clearly mention sum threshold: " + errorText);
+            }
+
+            // Confirm R2 fired alone — qty=stock should NOT trip R1's "available stock" message.
+            boolean mentionsStock = errorText.toLowerCase().contains("available stock");
+            if (!mentionsStock) {
+                logger.info("[PASS] #165 Only R2 fired (no R1 stock-violation reported)");
+            } else {
+                logger.warn("[WARN] #165 R1 (stock) also fired — qty=stock should have been within bounds");
             }
         }
 

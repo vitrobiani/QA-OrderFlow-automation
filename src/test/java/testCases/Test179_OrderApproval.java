@@ -69,12 +69,19 @@ public class Test179_OrderApproval {
         orderPage.submit();
         Thread.sleep(2000);
 
-        // Verify no error
+        // Verify no validation error
         boolean hasError = orderPage.hasError();
         if (hasError) {
             logger.error("[FAIL] #179 Unexpected error on submit: " + orderPage.errorText());
         }
         assertFalse("Order should submit without error", hasError);
+
+        // Submit triggers a "Confirm Order" dialog — accept it to actually place the order.
+        if (orderPage.hasConfirmDialog()) {
+            logger.info("#179 Confirm-order dialog shown, accepting");
+            orderPage.confirm();
+            Thread.sleep(2000);
+        }
 
         // Navigate to Order History
         nav.goOrderHistory();

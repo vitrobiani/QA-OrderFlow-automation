@@ -48,19 +48,18 @@ public class Test152_ReturnSingleOrder {
         // ---- Step 1: submit a good order (mirrors Test171) ------------------
         driver.get(base_test_class.BASE_URL);
         nav.goNewOrder();
-        Thread.sleep(1000);
 
         orderPage.selectCategory("laptops");
-        Thread.sleep(2000);
+        Thread.sleep(1000);
 
         String productName = orderPage.firstProductName();
         logger.info("#152 Ordering product to return later: " + productName);
 
         orderPage.addFirstProduct();
-        Thread.sleep(1000);
+        Thread.sleep(500);
 
         orderPage.submit();
-        Thread.sleep(2000);
+        Thread.sleep(1000);
 
         assertFalse("Order should submit without validation error", orderPage.hasError());
 
@@ -68,13 +67,13 @@ public class Test152_ReturnSingleOrder {
         if (orderPage.hasConfirmDialog()) {
             logger.info("#152 Confirm-order dialog shown, accepting");
             orderPage.confirm();
-            Thread.sleep(2000);
+            Thread.sleep(1000);
         }
         logger.info("#152 Order submitted and confirmed");
 
         // ---- Step 2: navigate to Returns ------------------------------------
         nav.goReturns();
-        Thread.sleep(1500);
+        Thread.sleep(1000);
 
         // Verify Returns page loaded
         assertTrue("Returns page should load", returnsPage.isLoaded());
@@ -94,7 +93,7 @@ public class Test152_ReturnSingleOrder {
             try {
                 returnsPage.selectProduct(productName);
                 logger.info("#152 Selected product for return: " + productName);
-                Thread.sleep(1000);
+                Thread.sleep(500);
             } catch (Exception e) {
                 logger.warn("#152 Could not select product by exact name, trying first option");
             }
@@ -106,7 +105,7 @@ public class Test152_ReturnSingleOrder {
 
             // Submit return
             returnsPage.submit();
-            Thread.sleep(1500);
+            Thread.sleep(1000);
             logger.info("#152 Submitted return request");
 
             // Check for success

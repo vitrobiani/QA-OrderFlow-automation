@@ -3,6 +3,7 @@ package pages;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -111,6 +112,34 @@ public class NewOrderPage extends BasePage {
     public String firstProductCardText() {
         By card = By.xpath("(//*[contains(@class,'product') or contains(@class,'card')])[1]");
         return text(card);
+    }
+
+    /**
+     * Adds the first product whose image is hosted under the given category slug.
+     * Needed because this SUT appends new-category products under the previous
+     * category's grid instead of replacing it — so `addFirstProduct()` would
+     * otherwise pick a stale top-of-grid card from the old category.
+     */
+    public void addFirstProductFromCategory(String categorySlug) {
+        By btn = By.xpath(
+            "(//*[starts-with(@data-testid,'product-card-')]"
+          + "[.//img[contains(@src,'/" + categorySlug + "/')]]"
+          + "//button[starts-with(@data-testid,'select-product-')])[1]"
+        );
+        click(btn);
+    }
+
+    /**
+     * Returns the title of the first product card whose image is hosted under
+     * the given category slug.
+     */
+    public String firstProductNameFromCategory(String categorySlug) {
+        By title = By.xpath(
+            "(//*[starts-with(@data-testid,'product-card-')]"
+          + "[.//img[contains(@src,'/" + categorySlug + "/')]]"
+          + "//h3)[1]"
+        );
+        return text(title);
     }
 
     /**

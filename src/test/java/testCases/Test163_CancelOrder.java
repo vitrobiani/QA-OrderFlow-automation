@@ -1,5 +1,6 @@
 package testCases;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.apache.logging.log4j.LogManager;
@@ -53,7 +54,8 @@ public class Test163_CancelOrder {
         Thread.sleep(2000);
 
         String productName = orderPage.firstProductName();
-        logger.info("#163 Testing with product: " + productName);
+        int originalStock = orderPage.firstProductStock();
+        logger.info("#163 Testing with product: " + productName + " (original stock=" + originalStock + ")");
 
         orderPage.addFirstProduct();
         Thread.sleep(1000);
@@ -73,8 +75,21 @@ public class Test163_CancelOrder {
 
         // Click Cancel
         orderPage.cancel();
-        Thread.sleep(1000);
+        Thread.sleep(2500);
         logger.info("#163 Cancel button clicked");
+
+        // KNOWN SUT BUG: Cancel clears the cart but does NOT restore the stock badge —
+        // the product is left displayed as "Out of stock" even though no order was placed.
+        // This assertion is expected to FAIL until the SUT is fixed; a passing test means
+        // the bug has been resolved. Do NOT loosen this check.
+        int stockAfterCancel = orderPage.firstProductStock();
+        logger.info("#163 Stock after cancel: " + stockAfterCancel);
+        if (stockAfterCancel == originalStock) {
+            logger.info("[PASS] #163 Stock restored to original (" + originalStock + ")");
+        } else {
+            logger.error("[FAIL] #163 Stock not restored: expected " + originalStock + " but got " + stockAfterCancel);
+        }
+        assertEquals("Stock should be restored to original after cancel", originalStock, stockAfterCancel);
 
         // Verify we're back to clean state or order is cancelled
         // Check that the order didn't go through (history should be empty or unchanged)

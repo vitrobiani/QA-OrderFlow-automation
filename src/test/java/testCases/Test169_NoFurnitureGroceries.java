@@ -62,13 +62,15 @@ public class Test169_NoFurnitureGroceries {
             logger.info("#169 Furniture item added to order");
         }
 
-        // Add groceries item
+        // Switch to groceries. NOTE: this SUT appends the new category's products
+        // *under* the previous grid rather than replacing it, so we must explicitly
+        // pick a card whose image comes from the groceries slug.
         orderPage.selectCategory("groceries");
         Thread.sleep(2000);
 
-        String groceryProduct = orderPage.firstProductName();
+        String groceryProduct = orderPage.firstProductNameFromCategory("groceries");
         logger.info("#169 Adding grocery product: " + groceryProduct);
-        orderPage.addFirstProduct();
+        orderPage.addFirstProductFromCategory("groceries");
         Thread.sleep(1000);
 
         // Verify both items in order
