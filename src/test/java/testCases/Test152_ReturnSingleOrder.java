@@ -122,6 +122,33 @@ public class Test152_ReturnSingleOrder {
             }
 
             assertFalse("Return should not produce error", hasError);
+
+            // KNOWN SUT BUG: after returning the full ordered qty, the product should
+            // disappear from the dropdown so the user cannot return it again and inflate
+            // stock out of thin air. The SUT currently leaves the option in place. This
+            // assertion is expected to FAIL until the bug is fixed; a passing test means
+            // the bug has been resolved. Do NOT loosen this check.
+
+            // Visibly re-open the dropdown so it's obvious in the browser/recording
+            // that the option is still listed after the return.
+            logger.info("#152 Re-opening returns dropdown to visually re-check the listed products");
+            org.openqa.selenium.WebElement reopenSel =
+                driver.findElement(org.openqa.selenium.By.id("return-product-select"));
+            new org.openqa.selenium.interactions.Actions(driver)
+                .moveToElement(reopenSel)
+                .click()
+                .perform();
+            Thread.sleep(1500);                                          // pause so the open dropdown is observable
+            reopenSel.sendKeys(org.openqa.selenium.Keys.ESCAPE);         // close it so it doesn't interfere with the assertion
+            Thread.sleep(300);
+
+            boolean stillListed = returnsPage.isProductInDropdown(productName);
+            if (!stillListed) {
+                logger.info("[PASS] #152 Product no longer in returns dropdown — cannot be returned twice");
+            } else {
+                logger.error("[FAIL] #152 Product still in returns dropdown after full return — stock could be inflated");
+            }
+            assertFalse("Returned product must disappear from the dropdown", stillListed);
         } else {
             logger.warn("[SKIP] #152 Return form not available - cannot complete test");
         }

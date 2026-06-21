@@ -51,6 +51,20 @@ public class ReturnsPage extends BasePage {
         sel.selectByIndex(1);
     }
     public void    setQty(int n)                    { type(qtyInput, String.valueOf(n)); }
+    /**
+     * Returns true if a product whose option text starts with the given name
+     * is still listed in the returns dropdown.
+     * Used to verify a fully-returned product disappears from the dropdown so
+     * you cannot return the same product twice (which would inflate stock).
+     */
+    public boolean isProductInDropdown(String name) {
+        Select sel = new Select(waitVisible(productDropdown));
+        for (WebElement opt : sel.getOptions()) {
+            String t = opt.getText();
+            if (!t.isEmpty() && t.startsWith(name)) return true;
+        }
+        return false;
+    }
     public void    submit()                         { click(submitBtn); }
     public boolean hasError()                       { return isPresent(errorMessage); }
     public String  errorText()                      { return text(errorMessage); }
